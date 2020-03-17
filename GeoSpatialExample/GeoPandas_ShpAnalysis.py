@@ -102,10 +102,13 @@ def interacte(shp_a,shp_b):
     res_intersection = geopandas.overlay(df_a, df_b_dissolve, how='intersection')
     print('-----------------------相交结果----------------------------')
     print(res_intersection)
-    ax = res_intersection.plot(alpha=0.5, cmap='tab10')
-
-    df_b_dissolve.plot(ax=ax, alpha=0.5,facecolor='green')
-    df_a.plot(ax=ax, facecolor='red',alpha=0.7 )
+    #获取相交分析后数据的质心，为了显示好看
+    centroid=res_intersection.centroid
+    #先定义缓冲区数据，放在下面
+    ax = df_b_dissolve.plot( alpha=0.7,facecolor='lime')
+    #再定义质心图层，放在上层
+    centroid.plot(ax=ax,alpha=0.5, facecolor='tomato')#,marker='o', markersize=5
+    #df_a.plot(ax=ax, facecolor='red',alpha=0.7)
     plt.title('intersection')
     plt.show()
 
@@ -124,6 +127,6 @@ if __name__ == '__main__':
 
     #ShpBuffer(strVectorFile,0.1)
     shp_a='GIAHS_buffer_0.1km.shp'
-    shp_b='SpecialTown_buffer_1km.shp'
+    shp_b='SpecialTown_buffer_0.5km.shp'
     interacte(shp_a,shp_b)
     #overlay()

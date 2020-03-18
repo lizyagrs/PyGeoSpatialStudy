@@ -181,13 +181,23 @@ def showMultiBandTIFFGray(RasterData):
         band = RasterData.GetRasterBand(index+1)
         #转数组
         band_data=band.ReadAsArray()
-        # 将画板分为1行多列，各波段从左到右依次排列
-        plt.subplot(1,num_bands,index+1)
+
+        # 将画板分为2行多列，各波段从左到右依次排列
+        plt.subplot(2,num_bands,index+1)
         #图片标题
         plt.title("band"+str(index+1))
         #图片显示原始图像
         plt.imshow(band_data, cmap='Greys_r')
-        plt.axis('off') # 不显示坐标轴
+
+        plt.subplot(2,num_bands,index+1+num_bands)
+
+        #计算平均值
+        mean_band_data =np.mean(band_data)
+        #标准差
+        std_range = np.std(band_data)*2
+        #图片显示拉伸后的图像
+        plt.imshow(band_data, cmap='Greys_r',vmin=mean_band_data-std_range,vmax=mean_band_data+std_range)
+        #plt.axis('off') # 不显示坐标轴
     #plt.colorbar(shrink=0.5)
     #窗口中展示图片
     plt.show()
@@ -203,7 +213,7 @@ if __name__ == '__main__':
     #切换目录
     os.chdir(dataPath)
     #测试影像数据
-    imagepath ='S2_20190727San_234.tif'
+    imagepath ='S2_20190727San.tif'
 
     #引入OpenTIF中的图像读取方法读图像数据
     data = read_img(imagepath)

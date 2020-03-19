@@ -14,7 +14,7 @@ from shapely.geometry import Point
 #ExcelFile：文件名【包含路径】
 def point2shp(ExcelFile):
     #geopandas自带数据，后面要加上编码，否则中文会变成乱码
-    Exceldata = pd.read_excel(ExcelFile,encoding ="gb18030")
+    Exceldata = pd.read_excel(ExcelFile,encoding ="utf-8")
     #print(Exceldata)
     #经度信息
     x = Exceldata.LONGITUDE
@@ -33,8 +33,8 @@ def point2shp(ExcelFile):
     shorFilename = ExcelFile.split('.')[0]
     #输出缓冲区后矢量文件名
     VectorFile= shorFilename+".shp"
-    #输出Shp
-    pointDataFrame.to_file(VectorFile,'ESRI Shapefile')
+    #输出Shp,设置编码格式，否则中文会有乱码
+    pointDataFrame.to_file(VectorFile,'ESRI Shapefile',encoding ="utf-8")
     #空间数据制图
     pointDataFrame.plot(color='green')
     #显示结果

@@ -1,45 +1,53 @@
 # _*_ coding: cp936 _*_
 # 导入geopandas
 import geopandas,os
+from fiona.crs import from_epsg
 from geopandas import GeoSeries
 import matplotlib.pyplot as plt
 from shapely.geometry import Polygon
 
 #输入矢量数据
-#半径
+#半径radius,单位：m
 def ShpBuffer(strVectorFile,radius):
-    #geopandas打开数据
-    vector = geopandas.read_file(strVectorFile)
+    #geopandas打开数据，如有中文，则加上中文编码方式，如有特殊字符，如网站链接等，则用utf-8方式
+    vector = geopandas.read_file(strVectorFile,encoding ="GB2312")
+    print('------------输入数据-----------------')
+    print(vector.crs)
+    #ESPG:3857:WGS 84 / Pseudo-Mercator -- Spherical Mercator, Google Maps, OpenStreetMap, Bing, ArcGIS, ESRI
+    vector_CGCS=TransferProjByEPSG(vector,3857)
+
+    print('------------转投影后数据-----------------')
     #打印输出数据属性列
-    print(vector.head())
+    print(vector_CGCS.head())
     #打印输出数据投影信息
-    #print(vector.crs)
-    #打印输出数据投影信息中init:  一般为'ESPG:……'
-    print(vector.crs['init'])
+    print(vector_CGCS.crs)
     #获取输入矢量数据的几何信息
-    g = GeoSeries(vector['geometry'])
+    g = GeoSeries(vector_CGCS['geometry'])
 
     print('----------------------buffer-------------------------------')
     #缓冲区分析，半径为函数的输入参数radius
     buffer=g.buffer(radius)
+
     #绘图的底图设置，黑色外框，白色内部
-    base = buffer.plot(color='white',edgecolor='black')
+    base = vector_CGCS.plot(color='white',edgecolor='black')
     #原始输入的矢量文件制图，绿色
-    vector.plot(ax=base, color='green')
+    buffer.plot(ax=base, color='green')
     #上述两个图层统一制图，对比缓冲前后结果
     plt.show()
 
     #缓冲区数据设置缓冲后的几何信息
-    vector_buffer = vector.set_geometry(buffer)
+    vector_buffer = vector_CGCS.set_geometry(buffer)
+
     print(vector_buffer.head())
     #给缓冲区后的矢量数据定义投影=输入矢量文件投影
-    vector_buffer.crs=vector.crs['init']
+    vector_buffer.crs = "EPSG:3857"
+    print(vector_buffer.crs)
     #获取文件名【不包含后缀名】
     shorFilename = strVectorFile.split('.')[0]
     #输出缓冲区后矢量文件名
-    bufferVectorFile= shorFilename+"_buffer_"+str(radius)+"km.shp"
+    bufferVectorFile= shorFilename+"_buffer_"+str(radius)+"m.shp"
     #缓冲区文件输出指定文件夹
-    vector_buffer.to_file(bufferVectorFile,'ESRI Shapefile')
+    vector_buffer.to_file(bufferVectorFile,'ESRI Shapefile',encoding ="utf-8")
 
 def overlay():
     polys1 = geopandas.GeoSeries([Polygon([(0,0), (2,0), (2,2), (0,2)]),
@@ -83,34 +91,39 @@ def overlay():
 
 #叠加分析
 def interacte(shp_a,shp_b):
-    df_a = geopandas.read_file(shp_a,encoding ="gb18030")
+    df_a = geopandas.read_file(shp_a,encoding ="GB2312")
     print(df_a)
-    df_b = geopandas.read_file(shp_b,encoding ="gb18030")
+    df_a=TransferProjByEPSG(df_a,4326)
+    df_b = geopandas.read_file(shp_b,encoding ="utf-8")
     print(df_b)
+    df_b=TransferProjByEPSG(df_b,4326)
     ax = df_a.plot(color='white', edgecolor='black')
     df_b.plot(ax=ax, color='green',edgecolor='red', alpha=0.5)
     #plt.show()
     #给数据B增加一个字段same，并定义相同的属性值dissolveall，为融合全部要素做准备
     df_b['same'] = 'dissolveall'
     #把全部要素融合
-    df_b_dissolve = df_b.dissolve(by='same')
-    df_b_dissolve.plot(alpha=0.5, cmap='tab10')
+    df_b_CGCS_dissolve = df_b.dissolve(by='same')
+    df_b_CGCS_dissolve.plot(alpha=0.5, cmap='tab10')
     # plt.show()
     print('------------dissolve结果---------')
-    print(df_b_dissolve.head())
+    print(df_b_CGCS_dissolve.head())
 
-    res_intersection = geopandas.overlay(df_a, df_b_dissolve, how='intersection')
+    res_intersection = geopandas.overlay(df_a, df_b_CGCS_dissolve, how='intersection')
     print('-----------------------相交结果----------------------------')
     print(res_intersection)
-    #获取相交分析后数据的质心，为了显示好看
-    centroid=res_intersection.centroid
     #先定义缓冲区数据，放在下面
-    ax = df_b_dissolve.plot( alpha=0.7,facecolor='lime')
-    #再定义质心图层，放在上层
-    centroid.plot(ax=ax,alpha=0.5, facecolor='tomato')#,marker='o', markersize=5
-    #df_a.plot(ax=ax, facecolor='red',alpha=0.7)
+    ax = df_b.plot( alpha=0.7,facecolor='lime')
+    #再定义相交结果图层，放在上层
+    res_intersection.plot(ax=ax,alpha=0.5, facecolor='tomato')#,marker='o', markersize=5
+
     plt.title('intersection')
     plt.show()
+
+#坐标转换函数
+def TransferProjByEPSG(df,code):
+    result = df.to_crs(from_epsg(code))
+    return result
 
 #主函数
 if __name__ == '__main__':
@@ -123,10 +136,10 @@ if __name__ == '__main__':
     #print('dataPath:'+dataPath)
     #切换目录
     os.chdir(dataPath)
-    strVectorFile ="GIAHS.shp"
+    strVectorFile ="SpecialTown.shp"
 
-    #ShpBuffer(strVectorFile,0.1)
-    shp_a='GIAHS_buffer_0.1km.shp'
-    shp_b='SpecialTown_buffer_0.5km.shp'
+    #ShpBuffer(strVectorFile,50000)
+    shp_a='GIAHS_buffer_10000m.shp'
+    shp_b='SpecialTown_buffer_50000m.shp'
     interacte(shp_a,shp_b)
     #overlay()

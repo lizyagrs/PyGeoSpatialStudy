@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from shapely.geometry import Point
 
 #用来正常显示中文标签
-plt.rcParams['font.sans-serif']=['KaiTi_GB2312']
+plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus'] = False# 显示负号
 plt.rcParams['figure.dpi'] = 100 #分辨率
 
@@ -155,5 +155,5 @@ if __name__ == '__main__':
     #获取工程根目录的路径
     #ShpMapWithLenged()
     #ShpTwoLayersMap()
-    #ShpChinaFullMap()
-    ColorAttribute(strVectorFile)
+    ShpChinaFullMap()
+    #ColorAttribute(strVectorFile)

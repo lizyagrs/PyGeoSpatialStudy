@@ -2,52 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpProjOutput.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.shx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.shx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC.sbn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC.sbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_1000m.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_1000m.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_500m.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_500m.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_500m.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds.sbn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds.sbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_1000m.cpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_1000m.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_1000m.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_1000m.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_500m.cpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_500m.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_500m.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_500m.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_500m.shx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/GIAHS.cpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/GIAHS.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_1km.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_1km.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_1km.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_1km.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_1km.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpProjOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpProjOutput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpShow.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpShow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.cpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.prj" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_1000m.prj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/GIAHS_buffer_10000m.shx" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_1000m.shx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_1000m.cpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.prj" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_500m.prj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_10000m.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/KFC_buffer_500m.cpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.prj" beforeDir="false" afterPath="$PROJECT_DIR$/ShpData/McDonalds_buffer_1000m.prj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_50000m.shx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,12 +81,6 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\PyGeoSpatialStudy" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\GDALShp" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\Analysis_Show" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
@@ -94,50 +88,14 @@
       <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
       <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\GDALShp" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\Analysis_Show" />
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.GeoPandas_ShpAnalysis">
-    <configuration name="Basemap_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PyGeoSpatialStudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeoSpatialExample/Basemap_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="GDAL_ShowTIF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PyGeoSpatialStudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="GeoPandas_Point2shp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,6 +138,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="GeoPandas_ShpMap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyGeoSpatialStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GeoPandas_ShpProjOutput" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,13 +180,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="GeoPandas_ShpShow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyGeoSpatialStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpShow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.GeoPandas_ShpAnalysis" />
+        <item itemvalue="Python.GeoPandas_ShpShow" />
+        <item itemvalue="Python.GeoPandas_ShpMap" />
         <item itemvalue="Python.GeoPandas_ShpProjOutput" />
         <item itemvalue="Python.GeoPandas_Point2shp" />
-        <item itemvalue="Python.GDAL_ShowTIF" />
-        <item itemvalue="Python.Basemap_data" />
       </list>
     </recent_temporary>
   </component>
@@ -523,12 +523,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584545782802</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="矢量数据分析中修改如下：&#10;1、缓冲区分析加入了投影转换【4326转为3857】&#10;2、替换了缓冲区的数据&#10;3、叠加分析做了调整，投影转换">
+      <created>1584632758686</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1584632758686</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="遥感影像的输出与NDVI计算" />
     <MESSAGE value="遥感影像的输出与NDVI计算，定义数据类型为float" />
     <MESSAGE value="遥感影像的读写看算" />
     <MESSAGE value="多波段遥感影像的拆分输出与灰度图并排显示" />
@@ -553,7 +559,8 @@
     <MESSAGE value="修改了相交分析的显示结果与效果" />
     <MESSAGE value="添加了basemap库数据测试，添加了nc测试数据，以及读取获取其信息的方法" />
     <MESSAGE value="增加了图像拉伸显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了图像拉伸显示" />
+    <MESSAGE value="矢量数据分析中修改如下：&#10;1、缓冲区分析加入了投影转换【4326转为3857】&#10;2、替换了缓冲区的数据&#10;3、叠加分析做了调整，投影转换" />
+    <option name="LAST_COMMIT_MESSAGE" value="矢量数据分析中修改如下：&#10;1、缓冲区分析加入了投影转换【4326转为3857】&#10;2、替换了缓冲区的数据&#10;3、叠加分析做了调整，投影转换" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -568,10 +575,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584545782025">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584632757716">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584545782025" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584632757716" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -584,22 +591,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="173" key="GridCell.Tab.0.bottom" timestamp="1584632173770">
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom" timestamp="1584709921430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="173" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584632173770" />
-    <state width="1345" height="173" key="GridCell.Tab.0.center" timestamp="1584632173770">
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584709921430" />
+    <state width="1345" height="172" key="GridCell.Tab.0.center" timestamp="1584709921430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="173" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584632173770" />
-    <state width="1345" height="173" key="GridCell.Tab.0.left" timestamp="1584632173769">
+    <state width="1345" height="172" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584709921430" />
+    <state width="1345" height="172" key="GridCell.Tab.0.left" timestamp="1584709921430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="173" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584632173769" />
-    <state width="1345" height="173" key="GridCell.Tab.0.right" timestamp="1584632173770">
+    <state width="1345" height="172" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584709921430" />
+    <state width="1345" height="172" key="GridCell.Tab.0.right" timestamp="1584709921430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="173" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584632173770" />
+    <state width="1345" height="172" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584709921430" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -616,18 +623,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="338" y="5" key="SettingsEditor" timestamp="1584632674439">
+    <state x="338" y="5" key="SettingsEditor" timestamp="1584710314548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584632674439" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584545810686">
+    <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584710314548" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584632774578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584545810686" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584623185691">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584632774578" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584670248121">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584623185691" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584670248121" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583934947397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

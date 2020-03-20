@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 #用EPSG编码转投影
 def TransferProjByEPSG(strVectorFile,code):
-    vector = geopandas.read_file(strVectorFile,encoding ="GB2312")
+    vector = geopandas.read_file(strVectorFile)
     result = vector.to_crs(from_epsg(code))
     print('转投影后的投影信息：'+str(result.crs))
     return result

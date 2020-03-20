@@ -6,6 +6,10 @@ from geopandas import GeoSeries
 import matplotlib.pyplot as plt
 from shapely.geometry import Polygon
 
+#用来正常显示中文标签
+plt.rcParams['font.sans-serif']=['SimHei']
+plt.rcParams['axes.unicode_minus'] = False# 显示负号
+
 #输入矢量数据
 #半径radius,单位：m
 def ShpBuffer(strVectorFile,radius):
@@ -91,20 +95,26 @@ def overlay():
 
 #叠加分析
 def interacte(shp_a,shp_b):
-    df_a = geopandas.read_file(shp_a,encoding ="GB2312")
+
+    df_a = geopandas.read_file(shp_a,encoding ="utf-8")
     print(df_a)
     df_a=TransferProjByEPSG(df_a,4326)
     df_b = geopandas.read_file(shp_b,encoding ="utf-8")
     print(df_b)
     df_b=TransferProjByEPSG(df_b,4326)
-    ax = df_a.plot(color='white', edgecolor='black')
-    df_b.plot(ax=ax, color='green',edgecolor='red', alpha=0.5)
+    ax = df_a.plot(color='red', edgecolor='black',label='KFC')
+    bx=df_b.plot(ax=ax, color='green',edgecolor='black', alpha=0.5,label='McDonalds')
+
     #plt.show()
-    #给数据B增加一个字段same，并定义相同的属性值dissolveall，为融合全部要素做准备
+    #给数据增加一个字段same，并定义相同的属性值dissolveall，为融合全部要素做准备
+    df_a['same'] = 'dissolveall'
     df_b['same'] = 'dissolveall'
     #把全部要素融合
+    df_a_dissolve = df_b.dissolve(by='same')
+    ax=df_a_dissolve.plot(alpha=0.5, color='red',label='KFC')
     df_b_CGCS_dissolve = df_b.dissolve(by='same')
-    df_b_CGCS_dissolve.plot(alpha=0.5, cmap='tab10')
+    ax=df_b_CGCS_dissolve.plot(ax=ax,alpha=0.5, color='blue')
+
     # plt.show()
     print('------------dissolve结果---------')
     print(df_b_CGCS_dissolve.head())
@@ -113,10 +123,9 @@ def interacte(shp_a,shp_b):
     print('-----------------------相交结果----------------------------')
     print(res_intersection)
     #先定义缓冲区数据，放在下面
-    ax = df_b.plot( alpha=0.7,facecolor='lime')
+    ax = df_a.plot( alpha=0.7,facecolor='lime')
     #再定义相交结果图层，放在上层
     res_intersection.plot(ax=ax,alpha=0.5, facecolor='tomato')#,marker='o', markersize=5
-
     plt.title('intersection')
     plt.show()
 
@@ -136,10 +145,10 @@ if __name__ == '__main__':
     #print('dataPath:'+dataPath)
     #切换目录
     os.chdir(dataPath)
-    strVectorFile ="SpecialTown.shp"
+    strVectorFile ="KFC.shp"
 
-    #ShpBuffer(strVectorFile,50000)
-    shp_a='GIAHS_buffer_10000m.shp'
-    shp_b='SpecialTown_buffer_50000m.shp'
+    #ShpBuffer(strVectorFile,1000)
+    shp_a='KFC_buffer_500m.shp'
+    shp_b='McDonalds_buffer_500m.shp'
     interacte(shp_a,shp_b)
     #overlay()

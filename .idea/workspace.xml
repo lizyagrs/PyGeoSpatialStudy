@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RasterData/T50RKU_20200320T025541_2348.tif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/ECMWF_DataProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/ECMWF_DataProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RasterData/S2_20190727San_234.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RasterData/S2_20190727San_NDVI.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RasterData/S2_20190727San_band1.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RasterData/S2_20190727San_band2.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RasterData/S2_20190727San_band3.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RasterData/S2_20190727San_band4.tif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -494,12 +497,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584710341937</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="NC数据温度绘图；&#10;添加了测试遥感影像">
+      <created>1584807854814</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1584807854814</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="遥感影像的读写看算" />
     <MESSAGE value="多波段遥感影像的拆分输出与灰度图并排显示" />
     <MESSAGE value="矢量数据读写、显示及更新" />
     <MESSAGE value="矢量数据创建时定义投影" />
@@ -524,7 +533,8 @@
     <MESSAGE value="增加了图像拉伸显示" />
     <MESSAGE value="矢量数据分析中修改如下：&#10;1、缓冲区分析加入了投影转换【4326转为3857】&#10;2、替换了缓冲区的数据&#10;3、叠加分析做了调整，投影转换" />
     <MESSAGE value="修改了空间叠加相交分析的测试用例数据与代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了空间叠加相交分析的测试用例数据与代码" />
+    <MESSAGE value="NC数据温度绘图；&#10;添加了测试遥感影像" />
+    <option name="LAST_COMMIT_MESSAGE" value="NC数据温度绘图；&#10;添加了测试遥感影像" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -539,10 +549,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584710341159">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584807853270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584710341159" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807853270" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -555,22 +565,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="275" key="GridCell.Tab.0.bottom" timestamp="1584807496855">
+    <state width="1345" height="275" key="GridCell.Tab.0.bottom" timestamp="1584807949425">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807496855" />
-    <state width="1345" height="275" key="GridCell.Tab.0.center" timestamp="1584807496854">
+    <state width="1345" height="275" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807949425" />
+    <state width="1345" height="275" key="GridCell.Tab.0.center" timestamp="1584807949425">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807496854" />
-    <state width="1345" height="275" key="GridCell.Tab.0.left" timestamp="1584807496854">
+    <state width="1345" height="275" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807949425" />
+    <state width="1345" height="275" key="GridCell.Tab.0.left" timestamp="1584807949425">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807496854" />
-    <state width="1345" height="275" key="GridCell.Tab.0.right" timestamp="1584807496855">
+    <state width="1345" height="275" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807949425" />
+    <state width="1345" height="275" key="GridCell.Tab.0.right" timestamp="1584807949425">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807496855" />
+    <state width="1345" height="275" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807949425" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -591,10 +601,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807782474" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584710353991">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584807871586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584710353991" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584807871586" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584782042680">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

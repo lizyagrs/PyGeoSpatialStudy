@@ -41,6 +41,14 @@ def read_tif(filename):
     del dataset #关闭对象，文件dataset
     return im_proj,im_geotrans,im_data,im_width,im_height
 
+#其他格式转tif
+#支持的影像格式可参考：https://blog.csdn.net/theonegis/article/details/80358983
+def transfertype(input,output,imagetype):
+    ds = gdal.Open(input)
+    ds = gdal.Translate(output, ds, format=imagetype)
+    print('ok')
+    ds = None
+
 #主函数
 if __name__ == '__main__':
     #获取工程根目录的路径
@@ -53,3 +61,8 @@ if __name__ == '__main__':
     os.chdir(dataPath)
     #读数据并获取影像信息
     data = read_img('S2_20190727San.tif')
+
+    input=r'D:\tmpdata\RS\S2A_MSIL1C20200320_T50RKU\GRANULE\L1C_T50RKU_A024768_20200320T030130\IMG_DATA\T50RKU_20200320T025541_B10.jp2'
+    output=r'D:\tmpdata\RS\S2A_MSIL1C20200320_T50RKU\GRANULE\L1C_T50RKU_A024768_20200320T030130\IMG_DATA\T50RKU_20200320T025541_B10.tif'
+    imagetype = 'GTiff'
+    transfertype(input,output,imagetype)

@@ -16,7 +16,7 @@ def getNetCDFData(filename):
     lats = f.variables['latitude'][:]##获取纬度的变量值
     t2m = f.variables['t2m'][:]##获取温度的变量值
     #print(t2m)
-    time = f.variables['time'][:]##获取温度的变量值
+    time = f.variables['time'][:]##获取时间的变量值
     print(time)
     print(len(time))
     t2m_units = f.variables['t2m'].units ##获取经度的变量值的单位

@@ -4,7 +4,7 @@ from osgeo import gdal
 import os
 import numpy as np
 import pandas as pd
-from GDALRaster.GDAL_OpenTIF import read_img
+from GDALRaster.GDAL_TIFOpen import read_img
 
 #用来正常显示中文标签
 plt.rcParams['font.sans-serif']=['SimHei']
@@ -230,10 +230,10 @@ if __name__ == '__main__':
 
     #引入OpenTIF中的图像读取方法读图像数据
     data = read_img(imagepath)
-    #showColorTIFF(data,2,3,4)
+    showColorTIFF(data,1,2,3)
     #showGreyTIFF(band1)
     #显示图像
-    showMultiBandTIFFGray(data)
+    #showMultiBandTIFFGray(data)
     #showTIFF(data)
     #showShortTIFF()
     #showShortImage()

@@ -2,8 +2,8 @@
 import numpy as np
 import gdal
 import os
-from GDALRaster.GDAL_OpenTIF import read_img
-from GDALRaster.GDAL_ShowTIF import ListShowTIFF,showGreyTIFF,showMultiBandTIFFGray
+from GDALRaster.GDAL_TIFOpen import read_img
+from GDALRaster.GDAL_TIFShow import ListShowTIFF,showGreyTIFF,showMultiBandTIFFGray
 
 #输出栅格函数，指定格式为GTiff
 #InputData用于获取坐标、投影等信息；

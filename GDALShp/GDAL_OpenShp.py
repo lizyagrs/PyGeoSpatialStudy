@@ -19,10 +19,10 @@ def ReadVectorFile(strVectorFile):
     ds = ogr.Open(strVectorFile, 0)
     #判断文件是否存在
     if ds == None:
-        print("打开文件【%s】失败！", strVectorFile)
+        print("打开文件【%s】失败！"%(strVectorFile))
         return
     #提示打开成功
-    print("打开文件【%s】成功！", strVectorFile)
+    print("打开文件【%s】成功！" %(strVectorFile))
 
 #主函数
 if __name__ == '__main__':

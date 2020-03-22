@@ -3,9 +3,9 @@ import numpy as np
 import gdal
 import os
 import matplotlib.pyplot as plt
-from GDALRaster.GDAL_OpenTIF import read_img,read_tif
-from GDALRaster.GDAL_WriteTIF import writeimage,write_tif
-import GDALRaster.GDAL_ShowTIF as showTIF
+from GDALRaster.GDAL_TIFOpen import read_img,read_tif
+from GDALRaster.GDAL_TIFWrite import writeimage,write_tif
+import GDALRaster.GDAL_TIFShow as showTIF
 
 #--------------------测试NDVI计算并输出栅格-------------------
 #计算NDVI

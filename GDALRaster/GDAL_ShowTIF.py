@@ -86,29 +86,42 @@ def showShortImage():
 
     plt.show()
 
-
-#显示彩色图
-def showColorTIFF(RasterData):
-
+# 显示彩色图
+def showColorTIFF(RasterData,bandRindex,bandGindex,bandBindex):
     image_data = RasterData.ReadAsArray()
-    #获取影像的第一波段
-    band1 = RasterData.GetRasterBand(1)
-    band2 = RasterData.GetRasterBand(2)
-    band3 = RasterData.GetRasterBand(3)
-    #判断栅格数据的数据类型
+    # 依次获取四个波段
+    band1 = RasterData.GetRasterBand(1).ReadAsArray()
+    band2 = RasterData.GetRasterBand(2).ReadAsArray()
+    band3 = RasterData.GetRasterBand(3).ReadAsArray()
+    band4 = RasterData.GetRasterBand(4).ReadAsArray()
+    # 判断栅格数据的数据类型
     if 'int8' in image_data.dtype.name:
         datatype = gdal.GDT_Byte
     elif 'int16' in image_data.dtype.name:
         datatype = gdal.GDT_UInt16
     else:
         datatype = gdal.GDT_Float32
-    bands = np.array((band1,band2,band3))
-    # 加载灰度图，可以添加 cmap 参数解决
-    plt.imshow(bands)
-    #plt.colorbar()
-    plt.axis('off') # 不显示坐标轴
-    #窗口中展示图
+
+    # 判断输入的波段组合
+    bandR = band1 if bandRindex == 1 else band2 if bandRindex == 2 else band3 if bandRindex == 3 else band4
+    bandG = band1 if bandGindex == 1 else band2 if bandGindex == 2 else band3 if bandGindex == 3 else band4
+    bandB = band1 if bandBindex == 1 else band2 if bandBindex == 2 else band3 if bandBindex == 3 else band4
+    # if(bandRindex == 1):
+    #     bandR = band1
+    # elif(bandRindex == 2):
+    #     bandR = band2
+    # elif(bandRindex == 3):
+    #     bandR = band3
+    # elif(bandRindex == 4):
+    #     bandR = band4
+
+    # matplotlib使用RGB格式，opencv使用的是BGR格式
+    bands = np.array([bandR, bandG, bandB]).transpose((1, 2, 0))
+    plt.imshow((bands * 255).astype(np.uint8))
+    plt.colorbar()
+    plt.axis('off')
     plt.show()
+
 
 #并排显示单波段图片
 def ListShowTIFF(RasterData):
@@ -217,7 +230,7 @@ if __name__ == '__main__':
 
     #引入OpenTIF中的图像读取方法读图像数据
     data = read_img(imagepath)
-    #showColorTIFF(data)
+    #showColorTIFF(data,2,3,4)
     #showGreyTIFF(band1)
     #显示图像
     showMultiBandTIFFGray(data)

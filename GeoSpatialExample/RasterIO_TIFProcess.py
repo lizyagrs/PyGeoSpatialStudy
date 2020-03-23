@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 import fiona
 import numpy as np
+import matplotlib.pyplot as plt
 import os
 import rasterio
 import rasterio.mask
 from rasterio.plot import show
 from rasterio.warp import calculate_default_transform, reproject, Resampling
 from rasterio import crs
+from rasterio.enums import Resampling
 
 #获取栅格数据基本信息
 def getTIFFInfo(imagepath):
@@ -25,6 +27,10 @@ def getTIFFInfo(imagepath):
         for index in range(num_bands):
             band=index+1
             show((ds,band),cmap='Greys_r')
+            plt.hist(ds.read(band))
+            plt.title("band"+str(band))
+            plt.show()
+
 
 def showTiFF(imagepath):
     with rasterio.open(imagepath) as ds:
@@ -37,6 +43,42 @@ def getBand(imagepath,bandnum):
             band = ds.read(bandnum)
     return band
     ds.close()
+
+#重采样
+def TIF_Resample(src_image,upscale_factor):
+
+    #upscale_factor = 2
+    #Downsampling to 1/2 of the resolution can be done with upscale_factor = 1/2.
+    with rasterio.open(src_image) as dataset:
+        # resample data to target shape
+        data = dataset.read(
+            out_shape=(
+                dataset.count,
+                int(dataset.height * upscale_factor),
+                int(dataset.width * upscale_factor)
+            ),
+            resampling=Resampling.cubic
+        )
+
+        # scale image transform
+        out_transform = dataset.transform * dataset.transform.scale(
+            (dataset.width / data.shape[-2]),
+            (dataset.height / data.shape[-1])
+        )
+        out_meta = dataset.meta #输入栅格的元数据赋值给输出影像
+        out_meta.update({"driver": "GTiff", #数据驱动类型，GTiff
+                         "height": data.shape[1], #行
+                         "width": data.shape[2], #列
+                         "transform": out_transform}) #反射变换参数
+
+
+    shorFilename = src_image.split('.')[0] #获取文件名【不包含后缀名】
+    out_TIFF= shorFilename+"_resample.tif" #组装输出的clip栅格文件名
+    print('out_TIFF:'+out_TIFF)
+    #输出裁剪后栅格，w为write，写
+    with rasterio.open(out_TIFF, "w",**out_meta) as dest:
+        dest.write(data) #输出重采样后的影像数据
+    showTiFF(out_TIFF)
 
 
 #矢量裁剪栅格
@@ -113,6 +155,53 @@ def TransferRasterProject(src_img,epsg_name):
                 dst_ds.write(dst_array, i)#写数据
     showTiFF(dst_img)
 
+#计算NDVI
+def calcNDVI(TIFFile):
+    #打开被裁剪栅格
+    with rasterio.open(TIFFile) as src:
+        showTiFF(TIFFile)
+        #raster = src.read()  # 读取所有波段
+        red = src.read(3)
+        nir = src.read(4)
+        #  源数据的元信息集合（使用字典结构存储了数据格式，数据类型，数据尺寸，投影定义，仿射变换参数等信息）
+        profile = src.profile
+        shorFilename = TIFFile.split('.')[0] #获取文件名【不包含后缀名】
+        out_TIFF= shorFilename+"_NDVI.tif" #组装输出的clip栅格文件名
+        print('out_TIFF:'+out_TIFF)
+        # 计算NDVI指数（对除0做特殊处理）
+        with np.errstate(divide='ignore', invalid='ignore'):
+            ndvi = (nir - red) / (nir + red).astype(np.float)
+            ndvi[ndvi == np.inf] = 0
+            ndvi = np.nan_to_num(ndvi)  # 写入数据
+            profile.update(dtype=ndvi.dtype, count=1)
+        with rasterio.open(out_TIFF, mode='w', **profile) as dst:
+            dst.write(ndvi, 1)
+        show(ndvi)
+
+#获取指定阈值的栅格数据
+def getsubdata(TIFFile,threshold):
+    #打开被裁剪栅格
+    with rasterio.open(TIFFile) as src:
+        showTiFF(TIFFile)
+        nir_band = src.read(4)  # 读取所有波段
+        #  源数据的元信息集合（使用字典结构存储了数据格式，数据类型，数据尺寸，投影定义，仿射变换参数等信息）
+        profile = src.profile
+        profile.update({"driver": "GTiff",
+                        "count": 1})
+        shorFilename = TIFFile.split('.')[0] #获取文件名【不包含后缀名】
+        out_TIFF= shorFilename+"_sub.tif" #组装输出的clip栅格文件名
+        print('out_TIFF:'+out_TIFF)
+        # 计算NDVI指数（对除0做特殊处理）
+        with np.errstate(divide='ignore', invalid='ignore'):
+            subdata=np.where(nir_band <= threshold, 0, nir_band)#将小于等于阈值的像元值赋值为0
+            #subdata=np.where(nir_band>=threshold,1,0)
+            subdata=np.where(subdata > threshold, 1, subdata)#将大于阈值的像元赋值为1
+            print(subdata)
+        with rasterio.open(out_TIFF, mode='w', **profile) as dst:
+            dst.write(subdata, 1)
+        showTiFF(out_TIFF)
+
+
 #主函数
 if __name__ == '__main__':
     #获取工程根目录的路径
@@ -127,11 +216,13 @@ if __name__ == '__main__':
     #切换目录
     os.chdir(RdataPath)
     #测试影像数据
-    imagepath ='T50RKU_20200320T025541_2348.tif'
-
+    imagepath ='T50RKU_20200320T025541_2348_clip.tif'
     #getTIFFInfo(imagepath)
-    TIF_ClipbyShp(imagepath,shpfile)
+    #TIF_ClipbyShp(imagepath,shpfile)
 
     #TransferRasterProject(imagepath,"4326")
+    #TIF_Resample(imagepath,1/2)
+    #calcNDVI(imagepath)
+    getsubdata(imagepath,3000)
 
 

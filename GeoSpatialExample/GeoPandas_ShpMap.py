@@ -123,7 +123,7 @@ def ShpChinaFullMap():
     ax = nine_lines.geometry.plot(ax=ax,
                                   edgecolor='black',
                                   alpha=0.6,
-                                  label='南海九段线')
+                                  label='南海十段线')
     # ax = china.geometry.representative_point()\
     #     .plot(ax=ax,
     #           facecolor='black',

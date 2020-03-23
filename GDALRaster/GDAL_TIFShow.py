@@ -226,14 +226,14 @@ if __name__ == '__main__':
     #切换目录
     os.chdir(dataPath)
     #测试影像数据
-    imagepath ='S2_20190727San.tif'
+    imagepath ='T50RKU_20200320T025541_2348_clip.tif'
 
     #引入OpenTIF中的图像读取方法读图像数据
     data = read_img(imagepath)
-    showColorTIFF(data,1,2,3)
+    #showColorTIFF(data,1,2,3)
     #showGreyTIFF(band1)
     #显示图像
-    #showMultiBandTIFFGray(data)
+    showMultiBandTIFFGray(data)
     #showTIFF(data)
     #showShortTIFF()
     #showShortImage()

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="" />
+    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_QProgressBar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_QSlider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_RGBSquare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_Simple.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBandDo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/images/mute.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,27 +42,27 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ShpData" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PyQtLearn" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\GeoSpatialExample" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\GDALShp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
       <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
       <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn\images" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\GeoSpatialExample" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.RasterIO_TIFProcess (1)">
-    <configuration name="CartopyShp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.RasterBandDo">
+    <configuration name="PyQt_BtnClick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,11 +70,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeoSpatialExample/CartopyShp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GDAL_TIFCalculation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PyQt_QProgressBar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,11 +91,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_TIFCalculation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_QProgressBar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GDAL_TIFShow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PyQt_QSlider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,11 +112,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_TIFShow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_QSlider.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GDAL_TIFWrite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RasterBand" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_TIFWrite.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RasterIO_TIFProcess (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RasterBandDo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,11 +154,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeoSpatialExample/RasterIO_TIFProcess.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/RasterBandDo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.RasterIO_TIFProcess (1)" />
-        <item itemvalue="Python.GDAL_TIFWrite" />
-        <item itemvalue="Python.GDAL_TIFShow" />
-        <item itemvalue="Python.GDAL_TIFCalculation" />
-        <item itemvalue="Python.CartopyShp" />
+        <item itemvalue="Python.RasterBandDo" />
+        <item itemvalue="Python.PyQt_BtnClick" />
+        <item itemvalue="Python.RasterBand" />
+        <item itemvalue="Python.PyQt_QProgressBar" />
+        <item itemvalue="Python.PyQt_QSlider" />
       </list>
     </recent_temporary>
   </component>
@@ -176,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00001" summary="加入了遥感影像的读取">
-      <created>1582818063941</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1582818063941</updated>
     </task>
     <task id="LOCAL-00002" summary="加入了遥感影像的读取">
       <created>1582818161428</created>
@@ -520,12 +524,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584978408295</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="将之前的常用包、OPENCV学习代码合并进来，合成一个完整工作代码包">
+      <created>1585013328045</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1585013328046</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="EXCEL表格数据转SHP点文件" />
     <MESSAGE value="EXCEL表格数据转SHP点文件并显示" />
     <MESSAGE value="遥感影像的读、写、看、算四个方法，并加了入测试数据" />
     <MESSAGE value="重新整理修改了工程、数据目录与代码目录" />
@@ -550,7 +560,8 @@
     <MESSAGE value="删除生成的波段数据" />
     <MESSAGE value="rasterio栅格打开与掩膜处理&#10;GDAL中的类名修改&#10;新增加了测试遥感数据" />
     <MESSAGE value="遥感影像处理与分析，NDVI，阈值提取，重采样，测试数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="遥感影像处理与分析，NDVI，阈值提取，重采样，测试数据" />
+    <MESSAGE value="将之前的常用包、OPENCV学习代码合并进来，合成一个完整工作代码包" />
+    <option name="LAST_COMMIT_MESSAGE" value="将之前的常用包、OPENCV学习代码合并进来，合成一个完整工作代码包" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -565,18 +576,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="377" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584927483612" />
+    <state x="715" y="0" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1585016278745">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="715" y="0" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585016278745" />
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583722328533">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584978407538">
+    <state x="564" y="95" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog" timestamp="1585019621530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584978407538" />
-    <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
+    <state x="564" y="95" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585019621530" />
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1585013327362">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="108" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682448296" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585013327362" />
+    <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1585016394456">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="108" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585016394456" />
     <state x="496" y="278" key="Github.CreateGistDialog" timestamp="1583682352711">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -585,22 +604,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="189" key="GridCell.Tab.0.bottom" timestamp="1584978451379">
+    <state width="1345" height="131" key="GridCell.Tab.0.bottom" timestamp="1585068341147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="189" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584978451379" />
-    <state width="1345" height="189" key="GridCell.Tab.0.center" timestamp="1584978451379">
+    <state width="1345" height="131" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341147" />
+    <state width="1345" height="131" key="GridCell.Tab.0.center" timestamp="1585068341146">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="189" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584978451379" />
-    <state width="1345" height="189" key="GridCell.Tab.0.left" timestamp="1584978451379">
+    <state width="1345" height="131" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341146" />
+    <state width="1345" height="131" key="GridCell.Tab.0.left" timestamp="1585068341146">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="189" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584978451379" />
-    <state width="1345" height="189" key="GridCell.Tab.0.right" timestamp="1584978451379">
+    <state width="1345" height="131" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341146" />
+    <state width="1345" height="131" key="GridCell.Tab.0.right" timestamp="1585068341147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="189" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584978451379" />
+    <state width="1345" height="131" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341146" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -617,14 +636,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="338" y="5" key="SettingsEditor" timestamp="1585013285247">
+    <state x="338" y="5" key="SettingsEditor" timestamp="1585068798687">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585013285247" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584978420230">
+    <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068798687" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585013341203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584978420230" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585013341203" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585013100194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

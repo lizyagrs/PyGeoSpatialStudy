@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_QProgressBar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_QSlider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_RGBSquare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_Simple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBandDo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/images/mute.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/oilseed.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Matplotlib/MatImage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matplotlib/MatImage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Matplotlib/hanititian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Image/hanititian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_EdgeDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_EdgeDetection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageRGBWindows.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageRGBWindows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageSegement.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageSegement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageShow.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageShow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_WaveFiltering.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_WaveFiltering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RasterData/xinghuaduotian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Image/xinghuaduotian.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,13 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\Image" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn\images" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
@@ -53,16 +60,9 @@
       <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
       <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn\images" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\GeoSpatialExample" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.RasterBandDo">
-    <configuration name="PyQt_BtnClick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.OpenCV_EdgeDetection">
+    <configuration name="MatImage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,11 +70,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Matplotlib" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Matplotlib/MatImage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PyQt_QProgressBar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenCV_EdgeDetection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,11 +91,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OpenCV_image" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_QProgressBar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OpenCV_image/OpenCV_EdgeDetection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PyQt_QSlider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenCV_ImageSegement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,11 +112,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OpenCV_image" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_QSlider.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageSegement.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RasterBand" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenCV_ImageShow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OpenCV_image" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageShow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RasterBandDo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenCV_WaveFiltering" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,11 +154,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OpenCV_image" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/RasterBandDo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OpenCV_image/OpenCV_WaveFiltering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.RasterBandDo" />
-        <item itemvalue="Python.PyQt_BtnClick" />
-        <item itemvalue="Python.RasterBand" />
-        <item itemvalue="Python.PyQt_QProgressBar" />
-        <item itemvalue="Python.PyQt_QSlider" />
+        <item itemvalue="Python.OpenCV_EdgeDetection" />
+        <item itemvalue="Python.OpenCV_ImageShow" />
+        <item itemvalue="Python.MatImage" />
+        <item itemvalue="Python.OpenCV_ImageSegement" />
+        <item itemvalue="Python.OpenCV_WaveFiltering" />
       </list>
     </recent_temporary>
   </component>
@@ -187,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00002" summary="加入了遥感影像的读取">
-      <created>1582818161428</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1582818161428</updated>
     </task>
     <task id="LOCAL-00003" summary="遥感影像的输出">
       <created>1582818581561</created>
@@ -531,12 +524,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585013328046</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="PyQt界面设计学习代码">
+      <created>1585068872982</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1585068872982</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="EXCEL表格数据转SHP点文件并显示" />
     <MESSAGE value="遥感影像的读、写、看、算四个方法，并加了入测试数据" />
     <MESSAGE value="重新整理修改了工程、数据目录与代码目录" />
     <MESSAGE value="重新整理修改了工程、数据目录与代码目录&#10;新增了Geopandas地图可视化测试" />
@@ -561,7 +560,8 @@
     <MESSAGE value="rasterio栅格打开与掩膜处理&#10;GDAL中的类名修改&#10;新增加了测试遥感数据" />
     <MESSAGE value="遥感影像处理与分析，NDVI，阈值提取，重采样，测试数据" />
     <MESSAGE value="将之前的常用包、OPENCV学习代码合并进来，合成一个完整工作代码包" />
-    <option name="LAST_COMMIT_MESSAGE" value="将之前的常用包、OPENCV学习代码合并进来，合成一个完整工作代码包" />
+    <MESSAGE value="PyQt界面设计学习代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="PyQt界面设计学习代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -588,10 +588,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="564" y="95" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585019621530" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1585013327362">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1585068871869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585013327362" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068871869" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1585016394456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -604,22 +604,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="131" key="GridCell.Tab.0.bottom" timestamp="1585068341147">
+    <state width="1345" height="131" key="GridCell.Tab.0.bottom" timestamp="1585109504533">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341147" />
-    <state width="1345" height="131" key="GridCell.Tab.0.center" timestamp="1585068341146">
+    <state width="1345" height="131" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585109504533" />
+    <state width="1345" height="131" key="GridCell.Tab.0.center" timestamp="1585109504533">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341146" />
-    <state width="1345" height="131" key="GridCell.Tab.0.left" timestamp="1585068341146">
+    <state width="1345" height="131" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585109504533" />
+    <state width="1345" height="131" key="GridCell.Tab.0.left" timestamp="1585109504533">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341146" />
-    <state width="1345" height="131" key="GridCell.Tab.0.right" timestamp="1585068341147">
+    <state width="1345" height="131" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585109504533" />
+    <state width="1345" height="131" key="GridCell.Tab.0.right" timestamp="1585109504533">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068341146" />
+    <state width="1345" height="131" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585109504533" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -640,14 +640,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068798687" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585013341203">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585068886035">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585013341203" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585013100194">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585068886035" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585103954611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585013100194" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585103954611" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583934947397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

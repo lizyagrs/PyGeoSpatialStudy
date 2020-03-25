@@ -22,7 +22,7 @@ def WatershedSeg(imgFile):
 
     # Finding sure foreground area
     dist_transform = cv2.distanceTransform(opening,cv2.DIST_L2,5)
-    ret, sure_fg = cv2.threshold(dist_transform,0.7*dist_transform.max(),255,0)
+    ret, sure_fg = cv2.threshold(dist_transform,0.2*dist_transform.max(),255,0)
 
     # Finding unknown region
     sure_fg = np.uint8(sure_fg)
@@ -67,6 +67,6 @@ if __name__=='__main__':
     #切换目录
     os.chdir(dataPath)
     #SHP文件路径
-    imgFile ="YellowPeaches.jpg"
+    imgFile ="oilseed.png"
     WatershedSeg(imgFile)
     #segtest(imgFile)

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 #用来正常显示中文标签
 plt.rcParams['font.sans-serif']=['SimHei']
 #打开指定图片
-image = plt.imread('hanititian.jpg')
+image = plt.imread('..\Image\hanititian.jpg')
 #定义图片框
 plt.figure()
 # 将画板分为2行两列，本幅图位于第一个位置

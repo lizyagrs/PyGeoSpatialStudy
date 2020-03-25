@@ -12,7 +12,7 @@ plt.rcParams['figure.dpi'] = 100 #分辨率
 #图像轮廓提取
 def CV_findContours(img):
     image = cv2.imread(img)
-    image = cv2.resize(image, None, fx=0.3, fy=0.3)    #为了完整显示，缩小一倍
+    image = cv2.resize(image, None, fx=0.7, fy=0.7)    #为了完整显示，缩小一倍
     print(image)
 
     fig = plt.gcf()                                  #分通道显示图片
@@ -28,9 +28,11 @@ def CV_findContours(img):
     #CrayfishRice.jpg,水体
     #BGR = np.array([122,141,140])
     #水稻
-    BGR = np.array([48,93,65])
-    upper = BGR + 15
-    lower = BGR - 15
+    #BGR = np.array([48,93,65])
+    #油菜
+    BGR = np.array([20,180,190])
+    upper = BGR + 35
+    lower = BGR - 35
     mask = cv2.inRange(image,lower,upper)
     #cv2.imshow("Mask",mask)
 
@@ -120,9 +122,9 @@ if __name__=='__main__':
     #切换目录
     os.chdir(dataPath)
     #SHP文件路径
-    imgFile ="ShaHu.png"
+    imgFile ="hanititian.jpg"
     #cvshowbasicimg(imgFile)
     #CV_findContours(imgFile)
-    #CannyEdge(imgFile)
-    #SobelEdge(imgFile)
+    CannyEdge(imgFile)
+    SobelEdge(imgFile)
     LaplacianEdge(imgFile)

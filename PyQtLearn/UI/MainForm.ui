@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GeoSpatialStudy</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>561</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>561</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>主菜单</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionExit"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuPython">
+    <property name="title">
+     <string>Python入门</string>
+    </property>
+    <addaction name="actionEnvironment"/>
+    <addaction name="actionNumpy"/>
+    <addaction name="actionMatplotlib"/>
+    <addaction name="actionPandas"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>爬虫</string>
+    </property>
+    <addaction name="actionEnvironment_2"/>
+    <addaction name="actionExamples"/>
+   </widget>
+   <widget class="QMenu" name="menuGDAL">
+    <property name="title">
+     <string>GDAL</string>
+    </property>
+    <addaction name="actionEnvironment_3"/>
+    <addaction name="actionShp"/>
+    <addaction name="actionRaster"/>
+   </widget>
+   <widget class="QMenu" name="menuGeoSpatial">
+    <property name="title">
+     <string>GeoSpatial</string>
+    </property>
+    <addaction name="actionGeopandas"/>
+    <addaction name="actionRasterIO"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuPython"/>
+   <addaction name="menu_2"/>
+   <addaction name="menuGDAL"/>
+   <addaction name="menuGeoSpatial"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionopen">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionEnvironment">
+   <property name="text">
+    <string>环境配置</string>
+   </property>
+  </action>
+  <action name="actionNumpy">
+   <property name="text">
+    <string>Numpy</string>
+   </property>
+  </action>
+  <action name="actionMatplotlib">
+   <property name="text">
+    <string>Matplotlib</string>
+   </property>
+  </action>
+  <action name="actionPandas">
+   <property name="text">
+    <string>Pandas</string>
+   </property>
+  </action>
+  <action name="actionEnvironment_2">
+   <property name="text">
+    <string>Environment</string>
+   </property>
+  </action>
+  <action name="actionExamples">
+   <property name="text">
+    <string>Examples</string>
+   </property>
+  </action>
+  <action name="actionEnvironment_3">
+   <property name="text">
+    <string>Environment</string>
+   </property>
+  </action>
+  <action name="actionShp">
+   <property name="text">
+    <string>Shp</string>
+   </property>
+  </action>
+  <action name="actionRaster">
+   <property name="text">
+    <string>Raster</string>
+   </property>
+  </action>
+  <action name="actionGeopandas">
+   <property name="text">
+    <string>Geopandas</string>
+   </property>
+  </action>
+  <action name="actionRasterIO">
+   <property name="text">
+    <string>RasterIO</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

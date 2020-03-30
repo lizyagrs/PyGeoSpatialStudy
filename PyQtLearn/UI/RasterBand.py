@@ -17,10 +17,6 @@ class Ui_Form(object):
         self.btn_DataInput = QtWidgets.QToolButton(Form)
         self.btn_DataInput.setGeometry(QtCore.QRect(450, 60, 71, 31))
         self.btn_DataInput.setObjectName("btn_DataInput")
-        self.progressBar = QtWidgets.QProgressBar(Form)
-        self.progressBar.setGeometry(QtCore.QRect(100, 140, 340, 30))
-        self.progressBar.setProperty("value", 0)
-        self.progressBar.setObjectName("progressBar")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(20, 60, 71, 31))
         font = QtGui.QFont()
@@ -32,6 +28,7 @@ class Ui_Form(object):
         self.btn_ok.setObjectName("btn_ok")
         self.txt_DataInput = QtWidgets.QTextEdit(Form)
         self.txt_DataInput.setGeometry(QtCore.QRect(100, 60, 331, 31))
+        self.txt_DataInput.setReadOnly(True)
         self.txt_DataInput.setObjectName("txt_DataInput")
 
         self.retranslateUi(Form)
@@ -39,7 +36,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "栅格处理"))
+        Form.setWindowTitle(_translate("Form", "栅格读取"))
         self.btn_DataInput.setText(_translate("Form", "浏览"))
         self.label.setText(_translate("Form", "数据路径："))
         self.btn_ok.setText(_translate("Form", "确定"))

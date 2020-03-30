@@ -9,7 +9,7 @@ dataPath = os.path.abspath(rootPath + r'\Image')
 #切换目录
 os.chdir(dataPath)
 #SHP文件路径
-imgFile ="oilseed.png"
+imgFile ="ShaHu.png"
 # 读取图片并缩放方便显示
 img = cv2.imread(imgFile)
 height, width = img.shape[:2]

@@ -24,15 +24,15 @@ def CV_findContours(img):
     plt.title('Image')
 
     #ShaHu.png
-    #BGR = np.array([60,65,65])
+    BGR = np.array([60,65,65])
     #CrayfishRice.jpg,水体
     #BGR = np.array([122,141,140])
     #水稻
     #BGR = np.array([48,93,65])
     #油菜
-    BGR = np.array([20,180,190])
-    upper = BGR + 35
-    lower = BGR - 35
+    #BGR = np.array([20,180,190])
+    upper = BGR + 10
+    lower = BGR - 10
     mask = cv2.inRange(image,lower,upper)
     #cv2.imshow("Mask",mask)
 
@@ -122,9 +122,9 @@ if __name__=='__main__':
     #切换目录
     os.chdir(dataPath)
     #SHP文件路径
-    imgFile ="hanititian.jpg"
+    imgFile ="ShaHu.png"
     #cvshowbasicimg(imgFile)
-    #CV_findContours(imgFile)
-    CannyEdge(imgFile)
-    SobelEdge(imgFile)
-    LaplacianEdge(imgFile)
+    CV_findContours(imgFile)
+    #CannyEdge(imgFile)
+    #SobelEdge(imgFile)
+    #LaplacianEdge(imgFile)

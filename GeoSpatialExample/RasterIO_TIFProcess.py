@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 import rasterio
 import rasterio.mask
-from rasterio.plot import show
+from rasterio.plot import show, show_hist
 from rasterio.warp import calculate_default_transform, reproject, Resampling
 from rasterio import crs
 from rasterio.enums import Resampling
@@ -21,7 +21,9 @@ def getTIFFInfo(imagepath):
         print(f'地理范围：{ds.bounds}')
         print(f'反射变换参数（六参数模型）：\n {ds.transform}')
         print(f'投影定义：{ds.crs}')
-
+        show_hist(ds, bins=50, lw=0.0, stacked=False,
+                  alpha=0.3,histtype='stepfilled',
+                  title="Histogram")
         num_bands= ds.count
         print('波段数为：'+str(num_bands))
         for index in range(num_bands):
@@ -35,6 +37,9 @@ def getTIFFInfo(imagepath):
 def showTiFF(imagepath):
     with rasterio.open(imagepath) as ds:
         show(ds)
+        show_hist(ds, bins=50, lw=0.0, stacked=False,
+                  alpha=0.3,histtype='stepfilled',
+                  title="Histogram")
 
 #获取影像的指定波段
 def getBand(imagepath,bandnum):
@@ -170,7 +175,7 @@ def calcNDVI(TIFFile):
         print('out_TIFF:'+out_TIFF)
         # 计算NDVI指数（对除0做特殊处理）
         with np.errstate(divide='ignore', invalid='ignore'):
-            ndvi = (nir - red) / (nir + red).astype(np.float)
+            ndvi = (nir - red) / (nir + red+0.00001)
             ndvi[ndvi == np.inf] = 0
             ndvi = np.nan_to_num(ndvi)  # 写入数据
             profile.update(dtype=ndvi.dtype, count=1)
@@ -219,10 +224,10 @@ if __name__ == '__main__':
     imagepath ='T50RKU_20200320T025541_2348_clip.tif'
     #getTIFFInfo(imagepath)
     #TIF_ClipbyShp(imagepath,shpfile)
-
+    #showTiFF(imagepath)
     #TransferRasterProject(imagepath,"4326")
     #TIF_Resample(imagepath,1/2)
-    #calcNDVI(imagepath)
-    getsubdata(imagepath,3000)
+    calcNDVI(imagepath)
+    #getsubdata(imagepath,3000)
 
 

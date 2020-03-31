@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/PyProgressbar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/QtProgressBar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/MainForm.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBar.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBarCall.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RasterData/T50RKU_20200320T025541_2348_clip_NDVI.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SkitLearn/Regression/Regression_LinearModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpectralData/92AV3C.lan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpectralData/92AV3C.spc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpectralData/92AV3GT.GIS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpectralData/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpectralPy/Spy_DisplayData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSVData/GDP_Pop_2018.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSVData/GDP_Pop_2018.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSVData/GDP_Pop_2018_RawData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/RasterIO_TIFProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/RasterIO_TIFProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_EdgeDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_EdgeDetection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageRGBWindows.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageRGBWindows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageShow.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageShow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.ui" beforeDir="false" afterPath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkitLearn/Regression/Regression_LinearModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/Regression_LinearModel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +38,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="pyconsole" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CSVData" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -64,22 +50,22 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\PyGeoSpatialStudy\SpectralPy" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\Image" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn\images" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\CSVData" />
       <recent name="D:\GitHub\PyGeoSpatialStudy" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\SkitLearn" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\SpectralPy" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\Image" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn\images" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Regression_LinearModel">
+  <component name="RunManager" selected="Python.Regression_LinearModel (1)">
     <configuration name="ProgressBarCall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,7 +129,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RasterBandDo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Regression_LinearModel (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,11 +137,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SkitLearn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/RasterBandDo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SkitLearn/Regression_LinearModel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,7 +162,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SkitLearn/Regression/Regression_LinearModel.py" />
+      <option name="SCRIPT_NAME" value="D:\GitHub\PyGeoSpatialStudy\SkitLearn\Regression_LinearModel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Regression_LinearModel (1)" />
         <item itemvalue="Python.Regression_LinearModel" />
         <item itemvalue="Python.QtProgressBar" />
         <item itemvalue="Python.ProgressBarCall" />
         <item itemvalue="Python.PyQt_QProgressBar" />
-        <item itemvalue="Python.RasterBandDo" />
       </list>
     </recent_temporary>
   </component>
@@ -205,13 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00004" summary="遥感影像的输出">
-      <created>1582818644041</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1582818644041</updated>
     </task>
     <task id="LOCAL-00005" summary="遥感影像的输出">
       <created>1582818664944</created>
@@ -549,12 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585110185354</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="PyQt&#10;scikit-learn">
+      <created>1585582883381</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1585582883382</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="重新整理修改了工程、数据目录与代码目录" />
     <MESSAGE value="重新整理修改了工程、数据目录与代码目录&#10;新增了Geopandas地图可视化测试" />
     <MESSAGE value="缓冲区分析并输出SHP" />
     <MESSAGE value="缓冲区分析并输出SHP【本地SHP文件测试通过】" />
@@ -579,7 +564,8 @@
     <MESSAGE value="将之前的常用包、OPENCV学习代码合并进来，合成一个完整工作代码包" />
     <MESSAGE value="PyQt界面设计学习代码" />
     <MESSAGE value="OpenCV测试代码和图片目录更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="OpenCV测试代码和图片目录更新" />
+    <MESSAGE value="PyQt&#10;scikit-learn" />
+    <option name="LAST_COMMIT_MESSAGE" value="PyQt&#10;scikit-learn" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -606,10 +592,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="564" y="95" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585019621530" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1585110184637">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1585582882739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585110184637" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582882739" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1585016394456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -622,22 +608,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="354" key="GridCell.Tab.0.bottom" timestamp="1585582723604">
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1585674249257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="354" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582723604" />
-    <state width="1345" height="354" key="GridCell.Tab.0.center" timestamp="1585582723604">
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1585674249257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="354" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582723604" />
-    <state width="1345" height="354" key="GridCell.Tab.0.left" timestamp="1585582723604">
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1585674249257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="354" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582723604" />
-    <state width="1345" height="354" key="GridCell.Tab.0.right" timestamp="1585582723604">
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1585674249257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="354" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582723604" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -654,18 +640,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="338" y="5" key="SettingsEditor" timestamp="1585230094690">
+    <state x="233" y="18" key="SettingsEditor" timestamp="1585582962446">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585230094690" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585110606051">
+    <state x="233" y="18" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582962446" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585582899582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585110606051" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585570353079">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582899582" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585653470087">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585570353079" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585653470087" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583934947397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

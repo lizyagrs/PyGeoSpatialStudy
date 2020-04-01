@@ -31,7 +31,7 @@ class RGBSquareExample(QWidget):
         #按照指令更改方块的样式，类似于网页中的css样式
         self.square.setStyleSheet("QWidget { background-color: %s }" %
                                   self.col.name())
-        #窗体大小，前两个值是离屏幕左上角坐标的位置(300, 300)的位置分别为，后两项分别是窗体宽度和高高
+        #窗体大小，前两个值是离屏幕左上角坐标的位置(300, 300)的位置分别为，后两项分别是窗体宽度和高度
         self.setGeometry(300, 300, 400, 200)
         #窗体标题
         self.setWindowTitle('Toggle button')

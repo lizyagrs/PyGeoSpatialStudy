@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVData/GDP_Pop_2018.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVData/GDP_Pop_2018.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVData/GDP_Pop_2018_RawData.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/SimpleForm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/SimpleForm.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyQtLearn/UI/SimpleFormDo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/Regression/Regression_LinearModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/Regression_LinearModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_RGBSquare.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_RGBSquare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_Simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyQtLearn/PyQt_Simple.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CSVData" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -65,29 +66,8 @@
       <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Regression_LinearModel (1)">
-    <configuration name="ProgressBarCall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PyGeoSpatialStudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/ProgressBarCall.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PyQt_QProgressBar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.SimpleFormDo">
+    <configuration name="PyQt_BtnClick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,7 +79,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_QProgressBar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QtProgressBar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PyQt_Simple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,7 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/QtProgressBar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/PyQt_Simple.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Regression_LinearModel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SimpleForm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -158,11 +138,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SkitLearn/Regression" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\GitHub\PyGeoSpatialStudy\SkitLearn\Regression_LinearModel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/SimpleForm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SimpleFormDo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyGeoSpatialStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyQtLearn/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyQtLearn/UI/SimpleFormDo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SimpleFormDo" />
+        <item itemvalue="Python.PyQt_BtnClick" />
+        <item itemvalue="Python.PyQt_Simple" />
+        <item itemvalue="Python.SimpleForm" />
         <item itemvalue="Python.Regression_LinearModel (1)" />
-        <item itemvalue="Python.Regression_LinearModel" />
-        <item itemvalue="Python.QtProgressBar" />
-        <item itemvalue="Python.ProgressBarCall" />
-        <item itemvalue="Python.PyQt_QProgressBar" />
       </list>
     </recent_temporary>
   </component>
@@ -191,13 +192,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00005" summary="遥感影像的输出">
-      <created>1582818664944</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1582818664944</updated>
     </task>
     <task id="LOCAL-00006" summary="遥感影像的输出">
       <created>1582818721225</created>
@@ -535,12 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585582883382</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="PyQt&#10;scikit-learn线性回归与数据可视化">
+      <created>1585674425279</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1585674425279</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="重新整理修改了工程、数据目录与代码目录&#10;新增了Geopandas地图可视化测试" />
     <MESSAGE value="缓冲区分析并输出SHP" />
     <MESSAGE value="缓冲区分析并输出SHP【本地SHP文件测试通过】" />
     <MESSAGE value="EXCEL2shp示例OK" />
@@ -565,7 +565,8 @@
     <MESSAGE value="PyQt界面设计学习代码" />
     <MESSAGE value="OpenCV测试代码和图片目录更新" />
     <MESSAGE value="PyQt&#10;scikit-learn" />
-    <option name="LAST_COMMIT_MESSAGE" value="PyQt&#10;scikit-learn" />
+    <MESSAGE value="PyQt&#10;scikit-learn线性回归与数据可视化" />
+    <option name="LAST_COMMIT_MESSAGE" value="PyQt&#10;scikit-learn线性回归与数据可视化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -588,14 +589,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="564" y="95" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog" timestamp="1585019621530">
+    <state x="380" y="177" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog" timestamp="1585729908383">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="564" y="95" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585019621530" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1585582882739">
+    <state x="380" y="177" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585729908383" />
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1585674424708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582882739" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674424708" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1585016394456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -608,22 +609,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1585674249257">
+    <state width="1345" height="110" key="GridCell.Tab.0.bottom" timestamp="1585731595313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
-    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1585674249257">
+    <state width="1345" height="110" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585731595313" />
+    <state width="1345" height="110" key="GridCell.Tab.0.center" timestamp="1585731595313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
-    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1585674249257">
+    <state width="1345" height="110" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585731595313" />
+    <state width="1345" height="110" key="GridCell.Tab.0.left" timestamp="1585731595313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
-    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1585674249257">
+    <state width="1345" height="110" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585731595313" />
+    <state width="1345" height="110" key="GridCell.Tab.0.right" timestamp="1585731595313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674249257" />
+    <state width="1345" height="110" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585731595313" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -640,18 +641,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="233" y="18" key="SettingsEditor" timestamp="1585582962446">
+    <state x="233" y="18" key="SettingsEditor" timestamp="1585729910557">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="233" y="18" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582962446" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585582899582">
+    <state x="233" y="18" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585729910557" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585674446247">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585582899582" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585653470087">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585674446247" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585729771162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585653470087" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585729771162" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583934947397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

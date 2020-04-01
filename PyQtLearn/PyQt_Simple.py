@@ -16,9 +16,9 @@ class Example(QWidget):
         btn = QPushButton('按钮', self)
         btn.setToolTip('这是一个按钮')
         btn.resize(btn.sizeHint())
-        btn.move(50, 50)
+        btn.move(100, 100)
 
-        self.setGeometry(300, 300, 300, 200)
+        self.setGeometry(300, 300, 300, 300)
         self.setWindowTitle('Tooltips')
         self.show()
 

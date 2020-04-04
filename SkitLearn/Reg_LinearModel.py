@@ -162,20 +162,6 @@ def BostonData_view():
 
 
 
-    # #显示热力矩阵图的一半
-    # mask = np.zeros_like(top_corr)
-    # mask[np.triu_indices_from(mask)] = True
-    # with sns.axes_style("white"):
-    #     f, ax = plt.subplots(figsize=(12, 6))
-    #     sns.set(font_scale=1.3)
-    #     # hm = sns.heatmap(top_corr, cbar=True, annot=True,cmap='YlGnBu',mask=mask, vmax=.3,
-    #     #                  square=True, fmt='.2f', annot_kws={'size': 13},
-    #     #                  yticklabels=top_corr.values, xticklabels=top_corr.values);
-    #     ax = sns.heatmap(top_corr, mask=mask, vmax=.3, square=True)
-    # plt.show()
-
-
-
 
 #主函数
 if __name__ == '__main__':

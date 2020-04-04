@@ -1,10 +1,13 @@
 #Classification:DecisionTree
 # -*- coding: utf-8 -*-
-from sklearn import tree
+
 from sklearn.datasets import load_iris
+from sklearn import tree
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
+from sklearn.metrics import *
 
+#决策树
 def Clf_DecisionTree():
     #--------------1.加载数据---------------------
     iris = load_iris() #数据集
@@ -28,21 +31,20 @@ def Clf_DecisionTree():
     print('y_实际值:',y_test)
 
     #--------------5.混淆矩阵--------------------
-    from sklearn.metrics import confusion_matrix
     c_matrix=confusion_matrix(y_test, y_pred)
-    print('y_pred:confusion_matrix:\n',c_matrix)
+    print('confusion_matrix:\n',c_matrix)
 
     #--------------混淆矩阵绘图--------------------------
-    from sklearn.metrics import plot_confusion_matrix
     import matplotlib.pyplot as plt
 
     disp = plot_confusion_matrix(clf, X_test, y_test)
-    print('y_test:confusion_matrix:\n',disp.confusion_matrix)
     plt.show()
 
-    #--------------6.精度报告--------------------
-    from sklearn.metrics import classification_report
+    #----------------kappa系数---------------------------
+    kappa = cohen_kappa_score(y_test, y_pred)
+    print('kappa:',kappa)
 
+    #--------------6.精度报告--------------------
     c_report=classification_report(y_test, y_pred, target_names=iris.target_names)
     print('精度报告：\n',c_report)
 

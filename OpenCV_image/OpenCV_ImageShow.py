@@ -183,8 +183,8 @@ if __name__=='__main__':
     #切换目录
     os.chdir(dataPath)
     #SHP文件路径
-    imgFile ="ShaHu.png"
-    #cvshowbasicimg(imgFile)
+    imgFile ="logo.jpg"
+    cvshowbasicimg(imgFile)
     #getGrayHist(imgFile)
     #getRGBHist(imgFile)
-    getRGBHistOnebyOne(imgFile)
+    #getRGBHistOnebyOne(imgFile)

@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSVData/GDP_Pop_2018_RawData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SkitLearn/CLF_SVM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkitLearn/CLF_RandomForest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSVData/GDP_Pop_2018_RawData.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageShow.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV_image/OpenCV_ImageShow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pandas/PandasExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pandas/PandasExcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/Clf_DecisionTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/CLF_DecisionTree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/Reg_LinearModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/Reg_LinearModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_DecisionTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/CLF_DecisionTree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +62,8 @@
       <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PandasExcel">
-    <configuration name="CLF_DecisionTree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.CLF_RandomForest">
+    <configuration name="CLF_RandomForest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,7 +75,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\GitHub\PyGeoSpatialStudy\SkitLearn\CLF_DecisionTree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SkitLearn/CLF_RandomForest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CLF_RandomForest" />
         <item itemvalue="Python.PandasExcel" />
         <item itemvalue="Python.Reg_LinearModel" />
         <item itemvalue="Python.CLF_SVM" />
         <item itemvalue="Python.OpenCV_ImageShow" />
-        <item itemvalue="Python.CLF_DecisionTree" />
       </list>
     </recent_temporary>
   </component>
@@ -195,13 +188,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00008" summary="遥感影像的输出">
-      <created>1582946241362</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1582946241362</updated>
     </task>
     <task id="LOCAL-00009" summary="遥感影像的输出与NDVI计算">
       <created>1582949178158</created>
@@ -539,12 +525,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585845962400</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="CSV数据清洗预处理，去除0值与指定特殊字符&#10;机器学习：SVM不同参数精度检验">
+      <created>1586016752306</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1586016752307</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="EXCEL2shp示例OK" />
     <MESSAGE value="去掉GDAL的缓冲区分析&#10;用Geopandas进行分析简单" />
     <MESSAGE value="影像读写增加了方法，栅格显示中增加了直方图计算&#10;矢量空间分析中加入了叠加分析&#10;缓冲区方法单独分离出来，单独建了一个空间分析类&#10;数据进行了多个测试有了变更" />
     <MESSAGE value="叠加分析进行了优化" />
@@ -569,7 +561,8 @@
     <MESSAGE value="PyQt&#10;scikit-learn线性回归与数据可视化" />
     <MESSAGE value="PyQt测试" />
     <MESSAGE value="决策树测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="决策树测试" />
+    <MESSAGE value="CSV数据清洗预处理，去除0值与指定特殊字符&#10;机器学习：SVM不同参数精度检验" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSV数据清洗预处理，去除0值与指定特殊字符&#10;机器学习：SVM不同参数精度检验" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -596,10 +589,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="380" y="177" width="789" height="310" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585729908383" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1586016667515">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1586016751484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586016667515" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586016751484" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1585016394456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -612,22 +605,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="184" key="GridCell.Tab.0.bottom" timestamp="1586016678536">
+    <state width="1345" height="175" key="GridCell.Tab.0.bottom" timestamp="1586100970015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="184" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586016678536" />
-    <state width="1345" height="184" key="GridCell.Tab.0.center" timestamp="1586016678536">
+    <state width="1345" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586100970015" />
+    <state width="1345" height="175" key="GridCell.Tab.0.center" timestamp="1586100970015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="184" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586016678536" />
-    <state width="1345" height="184" key="GridCell.Tab.0.left" timestamp="1586016678536">
+    <state width="1345" height="175" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586100970015" />
+    <state width="1345" height="175" key="GridCell.Tab.0.left" timestamp="1586100970014">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="184" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586016678536" />
-    <state width="1345" height="184" key="GridCell.Tab.0.right" timestamp="1586016678536">
+    <state width="1345" height="175" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586100970014" />
+    <state width="1345" height="175" key="GridCell.Tab.0.right" timestamp="1586100970015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="184" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586016678536" />
+    <state width="1345" height="175" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586100970015" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -648,14 +641,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="133" y="9" width="994" height="708" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585738157342" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585845975198">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586016766236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1585845975198" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586000381963">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586016766236" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586100984211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586000381963" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1586100984211" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586004209082">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -2,6 +2,7 @@
 import fiona
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import colors
 import os
 import rasterio
 import rasterio.mask
@@ -9,6 +10,17 @@ from rasterio.plot import show, show_hist
 from rasterio.warp import calculate_default_transform, reproject, Resampling
 from rasterio import crs
 from rasterio.enums import Resampling
+
+# NDVI颜色方案
+class MidpointNormalize(colors.Normalize):
+
+    def __init__(self, vmin=None, vmax=None, midpoint=None, clip=False):
+        self.midpoint = midpoint
+        colors.Normalize.__init__(self, vmin, vmax, clip)
+
+    def __call__(self, value, clip=None):
+        x, y = [self.vmin, self.midpoint, self.vmax], [0, 0.5, 1]
+        return np.ma.masked_array(np.interp(value, x, y), np.isnan(value))
 
 #获取栅格数据基本信息
 def getTIFFInfo(imagepath):
@@ -32,7 +44,6 @@ def getTIFFInfo(imagepath):
             plt.hist(ds.read(band))
             plt.title("band"+str(band))
             plt.show()
-
 
 def showTiFF(imagepath):
     with rasterio.open(imagepath) as ds:
@@ -84,7 +95,6 @@ def TIF_Resample(src_image,upscale_factor):
     with rasterio.open(out_TIFF, "w",**out_meta) as dest:
         dest.write(data) #输出重采样后的影像数据
     showTiFF(out_TIFF)
-
 
 #矢量裁剪栅格
 def TIF_ClipbyShp(TIFFile,shpFile):
@@ -162,26 +172,47 @@ def TransferRasterProject(src_img,epsg_name):
 
 #计算NDVI
 def calcNDVI(TIFFile):
-    #打开被裁剪栅格
+    # 读取波段
     with rasterio.open(TIFFile) as src:
-        showTiFF(TIFFile)
-        #raster = src.read()  # 读取所有波段
+        # 源数据的元信息集合（使用字典结构存储了数据格式，数据类型，数据尺寸，投影定义，仿射变换参数等信息）
+        profile = src.profile
+        print(profile)
         red = src.read(3)
         nir = src.read(4)
-        #  源数据的元信息集合（使用字典结构存储了数据格式，数据类型，数据尺寸，投影定义，仿射变换参数等信息）
-        profile = src.profile
-        shorFilename = TIFFile.split('.')[0] #获取文件名【不包含后缀名】
-        out_TIFF= shorFilename+"_NDVI.tif" #组装输出的clip栅格文件名
-        print('out_TIFF:'+out_TIFF)
-        # 计算NDVI指数（对除0做特殊处理）
-        with np.errstate(divide='ignore', invalid='ignore'):
-            ndvi = (nir - red) / (nir + red+0.00001)
-            ndvi[ndvi == np.inf] = 0
-            ndvi = np.nan_to_num(ndvi)  # 写入数据
-            profile.update(dtype=ndvi.dtype, count=1)
-        with rasterio.open(out_TIFF, mode='w', **profile) as dst:
-            dst.write(ndvi, 1)
-        show(ndvi)
+
+    # 计算NDVI指数（对除0做特殊处理）
+    np.seterr(divide='ignore', invalid='ignore')
+    ndvi = (nir.astype(float) - red.astype(float)) / (nir + red)
+    # 输出NDVI中的最大值、最小值
+    print(np.nanmin(ndvi))
+    print(np.nanmax(ndvi))
+
+    # 保存NDVI
+    profile.update(dtype=ndvi.dtype, count=1)
+    shorFilename = TIFFile.split('.')[0] #获取文件名【不包含后缀名】
+    out_TIFF= shorFilename+"_NDVI.tif" #组装输出的NDVI栅格文件名
+    with rasterio.open(out_TIFF, 'w', **profile) as dst:
+        dst.write(ndvi, 1)
+
+    # 显示NDVI
+    # 设置颜色方案，参考https://matplotlib.org/users/colormaps.html
+    colormap = plt.cm.RdYlGn
+    min = np.nanmin(ndvi)
+    max = np.nanmax(ndvi)
+    mid = 0.1
+    norm = MidpointNormalize(vmin=min, vmax=max, midpoint=mid)
+    fig = plt.figure(figsize=(20, 10))
+    ax = fig.add_subplot(111)
+    cbar_plot = ax.imshow(ndvi, cmap=colormap, vmin=min, vmax=max, norm=norm)
+    ax.axis('off')
+    # 设置标题
+    ax.set_title('Normalized Difference Vegetation Index', fontsize=17, fontweight='bold')
+    # 配置色带
+    cbar = fig.colorbar(cbar_plot, orientation='horizontal', shrink=0.65)
+    # 将其保持为图片
+    NDVI_pic = shorFilename + "_NDVI.png"  # 组装输出的NDVI栅格文件名
+    fig.savefig(NDVI_pic, dpi=200, bbox_inches='tight', pad_inches=0.7)
+    plt.show()
 
 #获取指定阈值的栅格数据
 def getsubdata(TIFFile,threshold):
@@ -206,7 +237,6 @@ def getsubdata(TIFFile,threshold):
             dst.write(subdata, 1)
         showTiFF(out_TIFF)
 
-
 #主函数
 if __name__ == '__main__':
     #获取工程根目录的路径
@@ -221,7 +251,8 @@ if __name__ == '__main__':
     #切换目录
     os.chdir(RdataPath)
     #测试影像数据
-    imagepath ='T50RKU_20200320T025541_2348_clip.tif'
+    #imagepath ='T50RKU_20200320T025541_2348_clip.tif'
+    imagepath = 'T50RKU_20200320T025541_2348.tif'
     #getTIFFInfo(imagepath)
     #TIF_ClipbyShp(imagepath,shpfile)
     #showTiFF(imagepath)

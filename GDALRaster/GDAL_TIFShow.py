@@ -15,18 +15,7 @@ plt.rcParams['figure.dpi'] = 200 #分辨率
 # 指定dpi=300，图片尺寸为 1800*1200
 # 设置figsize可以在不改变分辨率情况下改变比例
 
-#显示灰度图
-def showGreyTIFF(RasterData):
-    #将图片转为数组
-    image = RasterData.ReadAsArray()
-    # 加载灰度图，可以添加 cmap 参数解决
-    plt.imshow(image, cmap='Greys_r')
-    plt.colorbar()
-    plt.axis('off') # 不显示坐标轴
-    #窗口中展示灰度图
-    plt.show()
-
-#显示简单数组
+# 显示简单数组
 def showShortTIFF():
     a=np.arange(18).reshape(6,3)
     print(a)
@@ -51,13 +40,12 @@ def showShortTIFF():
 
     plt.show()
 
-#显示部分图片
+# 显示自然图像
 def showShortImage():
     #打开指定图片
-    a = plt.imread('xinghuaduotian.jpg')
+    a = plt.imread('../Image/xinghuaduotian.jpg')
     print(a.shape)
 
-    plt.title("彩色图片")
     b=a[[0,1,2]]
     print('----------b----------')
     print(b.shape)
@@ -86,44 +74,7 @@ def showShortImage():
 
     plt.show()
 
-# 显示彩色图
-def showColorTIFF(RasterData,bandRindex,bandGindex,bandBindex):
-    image_data = RasterData.ReadAsArray()
-    # 依次获取四个波段
-    band1 = RasterData.GetRasterBand(1).ReadAsArray()
-    band2 = RasterData.GetRasterBand(2).ReadAsArray()
-    band3 = RasterData.GetRasterBand(3).ReadAsArray()
-    band4 = RasterData.GetRasterBand(4).ReadAsArray()
-    # 判断栅格数据的数据类型
-    if 'int8' in image_data.dtype.name:
-        datatype = gdal.GDT_Byte
-    elif 'int16' in image_data.dtype.name:
-        datatype = gdal.GDT_UInt16
-    else:
-        datatype = gdal.GDT_Float32
-
-    # 判断输入的波段组合
-    bandR = band1 if bandRindex == 1 else band2 if bandRindex == 2 else band3 if bandRindex == 3 else band4
-    bandG = band1 if bandGindex == 1 else band2 if bandGindex == 2 else band3 if bandGindex == 3 else band4
-    bandB = band1 if bandBindex == 1 else band2 if bandBindex == 2 else band3 if bandBindex == 3 else band4
-    # if(bandRindex == 1):
-    #     bandR = band1
-    # elif(bandRindex == 2):
-    #     bandR = band2
-    # elif(bandRindex == 3):
-    #     bandR = band3
-    # elif(bandRindex == 4):
-    #     bandR = band4
-
-    # matplotlib使用RGB格式，opencv使用的是BGR格式
-    bands = np.array([bandR, bandG, bandB]).transpose((1, 2, 0))
-    plt.imshow((bands * 255).astype(np.uint8))
-    plt.colorbar()
-    plt.axis('off')
-    plt.show()
-
-
-#并排显示单波段图片
+# 并排显示单波段图片
 def ListShowTIFF(RasterData):
     #将指定图片转为数组
     image = RasterData.ReadAsArray()
@@ -153,7 +104,18 @@ def ListShowTIFF(RasterData):
     #窗口中展示图片
     plt.show()
 
-#直方图统计
+# 显示遥感影像某一波段灰度图
+def showGreyTIFF(RasterData):
+    #将图片转为数组
+    image = RasterData.ReadAsArray()
+    # 加载灰度图，可以添加 cmap 参数解决
+    plt.imshow(image, cmap='Greys_r')
+    plt.colorbar()
+    plt.axis('off') # 不显示坐标轴
+    #窗口中展示灰度图
+    plt.show()
+
+# 直方图统计
 def ShowTIFFHist(RasterData):
     #将指定图片转为数组
     image = RasterData.ReadAsArray()
@@ -167,7 +129,7 @@ def ShowTIFFHist(RasterData):
     #窗口中展示图片
     plt.show()
 
-#直方图统计
+# 直方图统计
 def ShowTIFFBoxplot(RasterData):
     #将指定图片转为数组
     image = RasterData.ReadAsArray()
@@ -179,7 +141,7 @@ def ShowTIFFBoxplot(RasterData):
     plt.grid(linestyle="--", alpha=0.8)
     plt.show()
 
-#显示遥感影像的所有单波段灰度图像
+# 显示遥感影像的所有单波段灰度图像
 def showMultiBandTIFFGray(RasterData):
     #打开指定图片
     #image = RasterData.ReadAsArray()
@@ -215,6 +177,39 @@ def showMultiBandTIFFGray(RasterData):
     #窗口中展示图片
     plt.show()
 
+# 对某一波段进行最大值最小值归一化
+def normalizationOfBand(band):
+    max = np.max(band)
+    min = np.min(band)
+    print(max,min)
+    newband = (band - min) / (max - min)
+    return newband
+
+# 显示彩色遥感影像
+def showColorTIFF(RasterData,bandRindex,bandGindex,bandBindex):
+    image_data = RasterData.ReadAsArray()
+    # 依次获取四个波段
+    band1 = RasterData.GetRasterBand(1).ReadAsArray()
+    band2 = RasterData.GetRasterBand(2).ReadAsArray()
+    band3 = RasterData.GetRasterBand(3).ReadAsArray()
+    band4 = RasterData.GetRasterBand(4).ReadAsArray()
+
+    # 判断输入的波段组合
+    bandR = band1 if bandRindex == 1 else band2 if bandRindex == 2 else band3 if bandRindex == 3 else band4
+    bandG = band1 if bandGindex == 1 else band2 if bandGindex == 2 else band3 if bandGindex == 3 else band4
+    bandB = band1 if bandBindex == 1 else band2 if bandBindex == 2 else band3 if bandBindex == 3 else band4
+
+    bandR = normalizationOfBand(bandR)
+    bandG = normalizationOfBand(bandG)
+    bandB = normalizationOfBand(bandB)
+
+    # matplotlib使用RGB格式，opencv使用的是BGR格式
+    bands = np.array([bandR, bandG, bandB]).transpose((1, 2, 0))
+    plt.imshow((bands * 255).astype(np.uint8))
+    #plt.colorbar()
+    plt.axis('off')
+    plt.show()
+
 #主函数
 if __name__ == '__main__':
     #获取工程根目录的路径
@@ -226,14 +221,25 @@ if __name__ == '__main__':
     #切换目录
     os.chdir(dataPath)
     #测试影像数据
-    imagepath ='T50RKU_20200320T025541_2348_clip.tif'
+    #imagepath ='T50RKU_20200320T025541_2348_clip.tif'
+    imagepath = 'S2_20190727San.tif'
+    dataset = read_img(imagepath)
 
-    #引入OpenTIF中的图像读取方法读图像数据
-    data = read_img(imagepath)
-    #showColorTIFF(data,1,2,3)
-    #showGreyTIFF(band1)
-    #显示图像
-    showMultiBandTIFFGray(data)
-    #showTIFF(data)
+    # 显示数组
     #showShortTIFF()
+    # 显示自然图像
     #showShortImage()
+
+    # 显示遥感影像某一波段灰度图
+    # 引入OpenTIF中的图像读取方法读图像数据
+    #band1 = dataset.GetRasterBand(1)
+    #showGreyTIFF(band1)
+    #ListShowTIFF(band1)
+    #ShowTIFFHist(band1)
+    #ShowTIFFBoxplot(band1)
+
+    # 显示遥感影像的所有单波段灰度图像
+    #showMultiBandTIFFGray(dataset)
+
+    # 显示彩色遥感影像
+    showColorTIFF(dataset, 4, 3, 2)

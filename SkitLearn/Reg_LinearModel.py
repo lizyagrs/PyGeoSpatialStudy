@@ -106,4 +106,5 @@ if __name__ == '__main__':
     os.chdir(CSVDataPath)
     CSVDatafile =CSVDataPath+'\GDP_Pop_2018.csv'
 
-    LinearModel(CSVDatafile)
+    #LinearModel(CSVDatafile)
+    LinearModel_coef()

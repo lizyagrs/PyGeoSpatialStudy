@@ -53,7 +53,7 @@ if __name__ == '__main__':
     #切换目录
     os.chdir(dataPath)
     #EXCEL文件名
-    ExcelFile ="GIAHS.xlsx"
+    ExcelFile ="PotatosPoints2019.xlsx"
 
     #调用EXCEL点转矢量函数
     point2shp(ExcelFile)

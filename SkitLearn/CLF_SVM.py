@@ -89,5 +89,5 @@ def Clf_SVM_Gamma():
 
 #主函数
 if __name__ == '__main__':
-    Clf_SVM_Kernels()
+    #Clf_SVM_Kernels()
     Clf_SVM_Gamma()

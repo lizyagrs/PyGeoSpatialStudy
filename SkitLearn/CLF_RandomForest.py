@@ -4,7 +4,7 @@ import operator
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import load_wine
+from sklearn.datasets import load_wine, load_boston
 from sklearn.model_selection import train_test_split, cross_val_score,GridSearchCV
 import numpy as np
 import matplotlib.pyplot as plt
@@ -175,20 +175,20 @@ def RForest_Score():
 
 def RF_Feature_Importances():
     #--------------1.加载数据---------------------
-    wine = load_wine() #数据集
-    data=wine.data #特征集
-    target=wine.target #结果目标集
+    ds = load_wine() #数据集
+    data=ds.data #特征集
+    target=ds.target #结果目标集
     n_samples,n_features=data.shape
     print("共有", n_samples, "个样本, 每个样本有", n_features, "个特征")
-
+    features_names = ds['feature_names']
+    print('features_names:',features_names)
     rfc = RandomForestClassifier(n_estimators=160
                                  ,random_state=90
                                  )
     rfc.fit(data,target)
 
-    features_names = wine['feature_names']
+
     feature_importances = rfc.feature_importances_
-    print('features_names:',features_names)
     print('feature_importances:',feature_importances) #display importance of each variables
 
     plt.figure(figsize=(12,4))
@@ -209,7 +209,7 @@ def RF_Feature_Importances():
 
 
     #重要性排序
-    print(sorted(zip(wine['feature_names'], map(lambda x: round(x, 4),
+    print(sorted(zip(ds['feature_names'], map(lambda x: round(x, 4),
                                                 rfc.feature_importances_)),
                  key=operator.itemgetter(1), reverse=True))
 
@@ -217,11 +217,11 @@ def RF_Feature_Importances():
 #主函数
 if __name__ == '__main__':
     #RForest_vs_DTree()
-    #RForest_n_estimators()
+    RForest_n_estimators()
     #RForest_max_depth()
     #RForest_max_features()
     #RForest_min_samples_leaf()
     #RForest_min_samples_split()
     #RForest_criterion()
     #RForest_Score()
-    RF_Feature_Importances()
+    #RF_Feature_Importances()

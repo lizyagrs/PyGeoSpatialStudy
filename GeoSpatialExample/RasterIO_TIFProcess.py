@@ -252,13 +252,13 @@ if __name__ == '__main__':
     os.chdir(RdataPath)
     #测试影像数据
     #imagepath ='T50RKU_20200320T025541_2348_clip.tif'
-    imagepath = 'T50RKU_20200320T025541_2348.tif'
-    #getTIFFInfo(imagepath)
+    imagepath = 'S2_20190727San.tif'
+    getTIFFInfo(imagepath)
     #TIF_ClipbyShp(imagepath,shpfile)
     #showTiFF(imagepath)
     #TransferRasterProject(imagepath,"4326")
     #TIF_Resample(imagepath,1/2)
-    calcNDVI(imagepath)
+    # calcNDVI(imagepath)
     #getsubdata(imagepath,3000)
 
 

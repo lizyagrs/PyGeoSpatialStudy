@@ -76,5 +76,4 @@ def BostonData_view():
 #主函数
 if __name__ == '__main__':
 
-    #LinearModel(CSVDatafile)
     BostonData_view()

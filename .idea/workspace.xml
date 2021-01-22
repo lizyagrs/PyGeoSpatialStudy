@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RasterData/1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RasterData/2.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RasterData/3.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RasterData/4.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/PotatosPoints2019.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/PotatosPoints2019.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/PotatosPoints2019.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/PotatosPoints2019.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/PotatosPoints2019.shx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/PotatosPoints2019.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_TIFOpen.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_TIFOpen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/RasterIO_TIFProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/RasterIO_TIFProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_RandomForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/CLF_RandomForest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_SVM.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/CLF_SVM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/Data_View.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/Data_View.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/Reg_LinearModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkitLearn/Reg_LinearModel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00011" summary="遥感影像的输出与NDVI计算，定义数据类型为float">
-      <created>1582949479402</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1582949479402</updated>
     </task>
     <task id="LOCAL-00012" summary="遥感影像的读写看算">
       <created>1582990100915</created>
@@ -547,12 +524,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586269036287</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Raster逐波段输出EXCEL">
+      <created>1611286292256</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1611286292256</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="叠加分析进行了优化" />
     <MESSAGE value="中国地图的制图数据及制图方法包含自定义图例" />
     <MESSAGE value="属性分级渲染及自定义图例" />
     <MESSAGE value="图像处理之轮廓提取，以沙湖轮廓提取为例" />
@@ -577,33 +560,42 @@
     <MESSAGE value="CSV数据清洗预处理，去除0值与指定特殊字符&#10;机器学习：SVM不同参数精度检验" />
     <MESSAGE value="RandomForest测试与精度对比，特征重要性排序" />
     <MESSAGE value="数据可视化类" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据可视化类" />
+    <MESSAGE value="Raster逐波段输出EXCEL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Raster逐波段输出EXCEL" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1611286291539">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611286291539" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1611281462370">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611281462370" />
-    <state width="672" height="187" key="GridCell.Tab.0.bottom" timestamp="1611286136319">
+    <state width="672" height="187" key="GridCell.Tab.0.bottom" timestamp="1611286338759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611286136319" />
-    <state width="672" height="187" key="GridCell.Tab.0.center" timestamp="1611286136319">
+    <state width="672" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611286338759" />
+    <state width="672" height="187" key="GridCell.Tab.0.center" timestamp="1611286338759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611286136319" />
-    <state width="672" height="187" key="GridCell.Tab.0.left" timestamp="1611286136319">
+    <state width="672" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611286338759" />
+    <state width="672" height="187" key="GridCell.Tab.0.left" timestamp="1611286338759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611286136319" />
-    <state width="672" height="187" key="GridCell.Tab.0.right" timestamp="1611286136319">
+    <state width="672" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611286338759" />
+    <state width="672" height="187" key="GridCell.Tab.0.right" timestamp="1611286338759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611286136319" />
+    <state width="672" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611286338759" />
     <state x="392" y="80" key="MultipleFileMergeDialog" timestamp="1611282905021">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="80" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1611282905021" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1611286302057">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611286302057" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1611282610744">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

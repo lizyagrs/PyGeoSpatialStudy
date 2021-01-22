@@ -44,6 +44,10 @@ def read_img(filename):
     #返回获取的参数
     return dataset
 
+#将多波段栅格数据逐波段读取并输出到单独的EXCEL中
+#输入文件名
+#Raster数据放在工程的指定文件夹中RasterData;
+# 或者也可以放在其他地方，但最好文件夹不要带中文名，自己到最下面的主函数中修改文件路径
 def DataArrayToExcel(Raster_Filename):
 
     #打开文件

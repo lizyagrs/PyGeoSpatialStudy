@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="" />
+    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numpy/NumpyLearn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Numpy/NumpyLearn.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +61,7 @@
       <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GDAL_TIFOpen">
+  <component name="RunManager" selected="Python.NumpyLearn">
     <configuration name="CLF_RandomForest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GeoPandas_Point2shp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="NumpyLearn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Numpy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Numpy/NumpyLearn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.NumpyLearn" />
         <item itemvalue="Python.GDAL_TIFOpen" />
         <item itemvalue="Python.GDAL_TIFShow" />
         <item itemvalue="Python.RasterIO_TIFProcess" />
         <item itemvalue="Python.CLF_RandomForest" />
-        <item itemvalue="Python.GeoPandas_Point2shp" />
       </list>
     </recent_temporary>
   </component>
@@ -184,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00014" summary="多波段遥感影像的拆分输出与灰度图并排显示">
-      <created>1583075306626</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1583075306626</updated>
     </task>
     <task id="LOCAL-00015" summary="多波段遥感影像的拆分输出与灰度图并排显示">
       <created>1583075442453</created>
@@ -528,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611323615788</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="数据">
+      <created>1611324081117</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1611324081117</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -561,10 +564,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="数据" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1611323615051">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1611324080317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611323615051" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611324080317" />
     <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611286877198" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1611281462370">
       <screen x="0" y="0" width="1366" height="728" />
@@ -590,10 +593,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="80" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1611282905021" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1611323909689">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1611324087998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611323909689" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611324087998" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611286898660" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1611323523200">
       <screen x="0" y="0" width="1366" height="728" />

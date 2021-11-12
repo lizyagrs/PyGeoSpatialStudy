@@ -3,38 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyProgressbar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_GenerateRandomSignal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_QProgressBar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_QSlider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_RGBSquare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_Simple.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/QtProgressBar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/GenerateRandomSignal.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/MainForm.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBar.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBarCall.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBandDo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/SimpleForm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/SimpleForm.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/SimpleFormDo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/images/mute.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyQtLearn/mplwidget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scipy/ScipyLearn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_DecisionTree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_RandomForest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_SVM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/Data_View.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkitLearn/Reg_LinearModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpectralData/92AV3C.lan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpectralData/92AV3C.spc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpectralData/92AV3GT.GIS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpectralData/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpectralPy/Spy_DisplayData.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +33,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RandomForestRegression" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ShpData" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -218,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00017" summary="矢量数据创建时定义投影">
-      <created>1583155348607</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1583155348607</updated>
     </task>
     <task id="LOCAL-00018" summary="EXCEL表格数据转SHP点文件">
       <created>1583167443591</created>
@@ -562,12 +523,18 @@
       <option name="project" value="LOCAL" />
       <updated>1611556496282</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Test">
+      <created>1636686843094</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1636686843094</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="图像处理之轮廓提取，以沙湖轮廓提取为例" />
     <MESSAGE value="图像处理之轮廓提取，以沙湖轮廓提取为例，修改了显示结果的方式&#10;修改了直方图统计显示结果的方式&#10;再以稻田照片为例，进行了水稻范围提取举例" />
     <MESSAGE value="OPenCV分离出去单独建立工程，这里只讲矢量数据空间分析与处理" />
     <MESSAGE value="修改了相交分析的显示结果与效果" />
@@ -592,9 +559,14 @@
     <MESSAGE value="Raster逐波段输出EXCEL" />
     <MESSAGE value="数据" />
     <MESSAGE value="数组转维度" />
-    <option name="LAST_COMMIT_MESSAGE" value="数组转维度" />
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2297" y="292" key="CommitChangelistDialog2" timestamp="1636686842001">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2297" y="292" key="CommitChangelistDialog2/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1636686842001" />
     <state width="662" height="233" key="GridCell.Tab.0.bottom" timestamp="1632986312023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -611,6 +583,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="662" height="233" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1632986312023" />
+    <state x="2238" y="436" key="Vcs.Push.Dialog.v2" timestamp="1636687269656">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2238" y="436" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1636687269656" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1629944059416">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -3,6 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyProgressbar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_BtnClick.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_GenerateRandomSignal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_QProgressBar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_QSlider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_RGBSquare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/PyQt_Simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/QtProgressBar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/GenerateRandomSignal.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/MainForm.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBar.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/ProgressBarCall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBand.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/RasterBandDo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/SimpleForm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/SimpleForm.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/UI/SimpleFormDo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/images/mute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyQtLearn/mplwidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scipy/ScipyLearn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_DecisionTree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_RandomForest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkitLearn/CLF_SVM.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkitLearn/Data_View.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkitLearn/Reg_LinearModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpectralData/92AV3C.lan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpectralData/92AV3C.spc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpectralData/92AV3GT.GIS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpectralData/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpectralPy/Spy_DisplayData.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +77,18 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\PyGeoSpatialStudy\SkitLearn" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\SpectralPy" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\Image" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn\images" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\Image" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\CSVData" />
       <recent name="D:\GitHub\PyGeoSpatialStudy" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\SkitLearn" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\SpectralPy" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\Image" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn\images" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\PyQtLearn" />
     </key>
   </component>
@@ -186,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
-    </task>
-    <task id="LOCAL-00016" summary="矢量数据读写、显示及更新">
-      <created>1583154256297</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1583154256297</updated>
     </task>
     <task id="LOCAL-00017" summary="矢量数据创建时定义投影">
       <created>1583155348607</created>
@@ -530,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611450399706</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="数组转维度">
+      <created>1611556496281</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1611556496282</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -563,60 +595,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="数组转维度" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1718" y="0" key="CommitChangelistDialog2" timestamp="1611450398974">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611324080317" />
-    <state x="1718" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1611450398974" />
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611286877198" />
-    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1611281462370">
+    <state width="662" height="233" key="GridCell.Tab.0.bottom" timestamp="1632986312023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611281462370" />
-    <state width="708" height="232" key="GridCell.Tab.0.bottom" timestamp="1611450417089">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state width="708" height="232" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1611450417089" />
-    <state width="672" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611287090116" />
-    <state width="708" height="232" key="GridCell.Tab.0.center" timestamp="1611450417089">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state width="708" height="232" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1611450417089" />
-    <state width="672" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611287090116" />
-    <state width="708" height="232" key="GridCell.Tab.0.left" timestamp="1611450417089">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state width="708" height="232" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1611450417089" />
-    <state width="672" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611287090116" />
-    <state width="708" height="232" key="GridCell.Tab.0.right" timestamp="1611450417089">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state width="708" height="232" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1611450417089" />
-    <state width="672" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611287090116" />
-    <state x="392" y="80" key="MultipleFileMergeDialog" timestamp="1611282905021">
+    <state width="662" height="233" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1632986312023" />
+    <state width="662" height="233" key="GridCell.Tab.0.center" timestamp="1632986312023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="392" y="80" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1611282905021" />
-    <state x="1656" y="118" key="Vcs.Push.Dialog.v2" timestamp="1611450407273">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611324087998" />
-    <state x="1656" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1611450407273" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611286898660" />
-    <state x="1761" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1611556472705">
-      <screen x="1366" y="0" width="1440" height="860" />
-    </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611323523200" />
-    <state x="1761" y="226" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1611556472705" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1611282610744" />
-    <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611323529810">
+    <state width="662" height="233" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1632986312023" />
+    <state width="662" height="233" key="GridCell.Tab.0.left" timestamp="1632986312022">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1611323529810" />
-    <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1611282886717" />
-    <state x="389" y="166" key="git4idea.merge.GitPullDialog" timestamp="1611282633024">
+    <state width="662" height="233" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1632986312022" />
+    <state width="662" height="233" key="GridCell.Tab.0.right" timestamp="1632986312023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="166" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1611282633024" />
+    <state width="662" height="233" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1632986312023" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1629944059416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1629944059416" />
   </component>
 </project>

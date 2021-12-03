@@ -83,12 +83,9 @@ def ColorAttribute(strVectorFile):
                           # },
                           legend=True,#添加图例
                           scheme='NaturalBreaks',#自然断点法
-                          k=5,#分5级
-                          legend_kwds={#图像属性设置
-                              'loc': 'lower left',#显示位置，左下角
-                              'title': 'GDP(100 Million CNY)',#图像标题
-                              'shadow': True #开启阴影
-                          })
+                          k=5)#分5级
+    handles, labels = ax.get_legend_handles_labels()
+    ax.legend(loc='lower left', fontsize=10, title='GDP(100 Million CNY)',  shadow=True, borderpad=0.6)
     #这里都是英文和数字，因此用Times New Roman字体
     plt.rcParams['font.sans-serif']=['Times New Roman']
     plt.show()
@@ -151,9 +148,9 @@ if __name__ == '__main__':
     #切换目录
     os.chdir(dataPath)
     #指定数据文件
-    strVectorFile ="SpecialTown.shp"
+    strVectorFile ="SpecialTownList.shp"
     #获取工程根目录的路径
-    #ShpMapWithLenged()
-    #ShpTwoLayersMap()
-    ShpChinaFullMap()
-    #ColorAttribute(strVectorFile)
+    # ShpMapWithLenged()
+    # ShpTwoLayersMap()
+    # ShpChinaFullMap()
+    ColorAttribute(strVectorFile)
